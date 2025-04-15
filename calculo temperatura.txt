@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+	
+    real cel,kel,fah
+
+  escreva ("Digite a temperatura em Celsius: ")
+   leia (cel)
+     kel = cel + 273.15
+     fah = cel * 1.8 + 32
+
+  escreva("Kelvin: " +kel) 
+
+  escreva(" e Fahrenheit: " +fah)
+
+
+  }
+}
