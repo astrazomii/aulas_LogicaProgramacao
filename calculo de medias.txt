@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
   
-  //Definição das variáveis; As quatros medias do aluno durante o trimestre, e a média final.
+  //Definição das variáveis; As quatros medias do aluno durante o bimestre, e a média final.
   real un1, un2, un3, un4, media
   
    escreva("Digite a primeira média: ")
