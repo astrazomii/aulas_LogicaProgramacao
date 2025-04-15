@@ -13,7 +13,7 @@ programa {
    escreva("Digite o quarta média: ")
    leia(un4)
 
-   media=(un1+un2+un3+un4/4)
+   media=(un1+un2+un3+un4)/4
 
    limpa()
 
