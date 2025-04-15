@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+  
+  //Definição das variáveis; As quatros medias do aluno durante o trimestre, e a média final.
+  real un1, un2, un3, un4, media
+  
+   escreva("Digite a primeira média: ")
+   leia(un1)
+   escreva("Digite o segunda média: ")
+   leia(un2)
+   escreva("Digite o terceira média: ")
+   leia(un3)
+   escreva("Digite o quarta média: ")
+   leia(un4)
+
+   media=(un1+un2+un3+un4/4)
+
+   limpa()
+
+se(media>=7){
+ escreva("Parabéns! Você passou de ano! :D")
+ }
+senao se(media<7){
+ escreva("Oh não, você reprovou! Burro para um caralho! :C")
+ }
+ }
+
+  }
