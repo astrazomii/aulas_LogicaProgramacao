@@ -29,7 +29,7 @@
     escreva("Senha inválida! A senha deve possuir no mínimo 8 caractéres.")
 
   limpa()
-    escreva("Cadastro realizado com sucesso! Seus dados cadastrados no bano de dados são: \n\nNome: ", nome ,"\nEmail: ", email ,"\nIdade: ", idade ,"\nSenha: ", senha)}
+    escreva("Cadastro realizado com sucesso! Seus dados cadastrados no banco de dados são: \n\nNome: ", nome ,"\nEmail: ", email ,"\nIdade: ", idade ,"\nSenha: ", senha)}
 
     
    }
