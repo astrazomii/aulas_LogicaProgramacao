@@ -1,0 +1,35 @@
+  programa
+{
+  inclua biblioteca Matematica --> mat
+  inclua biblioteca Texto --> txt
+
+  cadeia nome, email, senha
+  real idade
+
+  funcao inicio()
+
+  {
+  escreva("Responda as informações para realizar seu cadastro. ")
+  escreva("\nInsira seu nome: ")
+   leia(nome)
+  escreva("Olá! ", nome, ".")
+
+  escreva("\nInsira seu email: ")
+   leia(email)
+
+  escreva("Insira sua idade: ")
+  leia(idade)
+   se (idade>=18){
+    escreva("Idade válida!")}
+   senao(escreva("Idade inválida! A idade mínima para realizar o cadastro é de 18 anos."))
+
+  escreva("\nDigite sua senha (Deve conter no mínimo 8 caractéres): ")
+   leia(senha)
+    
+    escreva("Senha inválida! A senha deve possuir no mínimo 8 caractéres.")
+
+  limpa()
+    escreva("Cadastro realizado com sucesso! Seus dados cadastrados no bano de dados são: \n\nNome: ", nome ,"\nEmail: ", email ,"\nIdade: ", idade ,"\nSenha: ", senha)}
+
+    
+   }
