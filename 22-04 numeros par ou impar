@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    
+    inteiro numero // Declaração da variável.
+    
+    escreva("Informe o número: ")
+    leia(numero)
+     
+    se(numero % 2 == 0)(
+      escreva("Número PAR: ", numero)
+      
+    )senao(
+      escreva("Número IMPAR: ", numero)
+    )
+  }
+}
