@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+  
+  real sa, ns 
+  // Declarando a variável do salário.
+  // ns = Resultado do salário com aumento das comissões. / sa = Salário bruto.
+
+  escreva("Insira o salário do funcionário: ")
+   leia(sa)
+    se (sa<=1000)
+     ns = sa * 1.10
+    senao se(sa<=5000)
+     ns = sa * 1.20
+    senao
+     ns = sa * 1.30
+  escreva("O salário foi ajustado com sucesso! \nO novo salário do funcionário é de: R$", ns)
+
+  }
+}
