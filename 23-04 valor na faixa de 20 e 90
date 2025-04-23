@@ -1,0 +1,12 @@
+programa {
+  funcao inicio() {
+    inteiro valor
+
+  escreva("Insira o valor dentro da faixa permitida: ")
+   leia(valor)
+    se((valor>=20) e (valor<=90))
+     escreva("O valor está na faixa permitida.")
+    senao
+     escreva("O valor está fora da faixa permitida.") 
+  }
+}
