@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() {
+    cadeia sexo, m, f
+
+  escreva("Digite seu gênero (M para masculino e F para feminino): ")
+   leia(sexo)
+    se (sexo == "M" ou sexo == "F"){
+      escreva("Gênero válido.")
+    }
+    senao{
+      escreva("Gênero inválido.")
+    }
+    }
+  }
