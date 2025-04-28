@@ -1,0 +1,10 @@
+programa {
+  funcao inicio() {
+    inteiro pagina
+
+// Inicio do laço de repetição (PARA)
+    para (pagina = 1; pagina<=3; pagina++){
+      escreva("Passando para a página ", pagina, "\n")
+    }
+  }
+}
