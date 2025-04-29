@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    
+    inteiro num, con, par=0
+
+    escreva("Informe os números, seu merda: \n")
+     para(con=1; con<=10; con++){
+      leia(num)
+      
+    se(num % 2 == 0){
+     par = par + 1
+    }
+    }
+escreva("Quantidade de pares: ", par)
+  }
+}
