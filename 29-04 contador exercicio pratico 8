@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() {
+    
+    inteiro num, soma = 0
+    
+    faca{
+      escreva("Informe um numero: ")
+       leia(num)
+       soma = soma + num
+
+    } enquanto(num !=0)
+    escreva("Resultado da soma: ", soma)
+  }
+}
