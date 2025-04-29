@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() {
+
+  inteiro num, media, contador, aux=0
+  
+   para(contador=1; contador <= 5; contador++){
+    escreva("Informe a ", contador, "ª nota: ")
+     leia(num)
+    aux = aux + num
+   }   
+   media = aux/5
+   escreva("Média do aluno: ", media)
+   }
+ }
