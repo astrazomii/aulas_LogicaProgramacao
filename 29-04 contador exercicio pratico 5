@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+
+    inteiro num, con
+
+    escreva("Informe o número para visualizar sua tabuada: ")
+     leia(num)
+
+     limpa()
+     escreva("Tabuada de ", num, ": \n\n")
+     para(con = 1; con <= 10; con++){
+      escreva(num, " * ", con,": ", con * num, "\n")
+
+     }
+    
+  }
+}
