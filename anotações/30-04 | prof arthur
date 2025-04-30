@@ -24,3 +24,6 @@ valor +=10; // Equivalente a valor = valor + 10; Resultado: valor agora é 15.
 
 ---
 
+Exercício para casa: Elaborar um programas que leia sucessivamente valores numéricos e apresente no final o somatório, a média e o total de valores lidos.
+O programa deve ler os valores enquanto o usuário estiver fornecendo valores positivos. Ou seja, o programa deve para quando o usuário fornecer um valor
+negativo (menor que zero).
