@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+    
+    inteiro num, mul, con = 1
+    cadeia continua = "S"
+      
+      enquanto(continua == "S"){
+        enquanto(con <= 5){
+    
+          con = con + 1
+    
+         escreva("Escreva o valor: ")
+          leia(num)
+            escreva("Seu valor: ", num * 3, "\n")
+      }
+         escreva("Deseja continuar?\nDigite 'S' para continuar: ")
+
+          con = 1
+
+          leia(continua)
+            limpa()
+      }
+      }
+        }
