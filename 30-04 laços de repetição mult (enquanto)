@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    
+    inteiro num, mul, con = 1
+      
+      enquanto(con <= 5){
+    
+    con = con + 1
+    
+    escreva("Escreva o valor: ")
+      leia(num)
+    escreva("Seu valor: ", num * 3, "\n")
+      
+  }
+  }
+}
