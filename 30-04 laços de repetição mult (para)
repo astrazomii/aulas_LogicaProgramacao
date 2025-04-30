@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+
+    inteiro num, con, mul
+
+    para(con=1; con<=5; con++){
+      escreva("Insira o valor: ")
+        leia(num)
+    
+    mul = num * 3
+    escreva("Operação realizada! Resultados abaixo:\n", mul, "\n")
+    }
+    
+  }
+}
