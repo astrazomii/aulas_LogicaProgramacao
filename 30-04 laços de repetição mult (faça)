@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() {
+    
+    inteiro num, mul
+
+    faca{
+      escreva("Informe um numero: ")
+       leia(num)
+       mul = num * 3
+      escreva("Resultado de ", num, ": ", mul, "\n")
+    } enquanto(num!=5)
+
+  }
+}
