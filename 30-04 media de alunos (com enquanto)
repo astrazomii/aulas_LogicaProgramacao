@@ -1,0 +1,18 @@
+programa {
+  funcao inicio() {
+    
+    inteiro con = 0, not = 1, med, soma = 0
+
+  enquanto(not == 1){
+    enquanto(con < 10){
+
+    con = con + 1
+
+    escreva("Insira o valor numérico: ")
+      leia(not)
+        soma = soma + not
+      }  
+    escreva("Média dos valores inseridos: ", soma / 10)
+    }
+  }
+}
