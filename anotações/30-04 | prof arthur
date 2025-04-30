@@ -1,0 +1,26 @@
+As duas principais etapas para programar é:
+
+1. Análise
+2. Dev
+
+---
+
+Identação: Priorizar códigos igual parágrafos. Para usá-lo, si é pressionado o Tab.
+
+---
+
+Atribuição na programação: Atribuir uma variável à programação.
+Atribuição composta: Significa combinar uma operação com uma atribuição em uma única expressão.
+
+Atribuição (=)
+Operação (+. -)
+Atribuição composta (+=)
+
+ Exemplo:
+
+int valor =5;
+
+valor +=10; // Equivalente a valor = valor + 10; Resultado: valor agora é 15.
+
+---
+
