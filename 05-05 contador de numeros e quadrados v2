@@ -1,0 +1,11 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    
+    inteiro quadrado, contador
+    para(contador=1; contador <= 10; contador++){
+        escreva("Quadrado de ", contador, " é ", mat.potencia(contador,2),"\n")
+    }
+
+  }
+}
