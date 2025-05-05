@@ -1,0 +1,13 @@
+  programa
+{
+  inclua biblioteca Matematica --> mat
+  inteiro con
+
+  funcao inicio()
+  {
+    para(con=1; con<=10; con++){
+      escreva("Número:", con, "\nQuadrado:", con * con, "\n\n")
+
+    }
+  }
+}
