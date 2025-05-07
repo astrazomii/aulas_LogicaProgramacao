@@ -29,7 +29,16 @@
             <td>6,5</td>
             <td>Aprovado! Passou raspado :@</td>
         </tr>
-        
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <ul>
+            <li>merda mole 1</li>
+            <li>merda mole 2</li>
+            <li>merda mole 3</li>
+        </ul>
     </table>
     <br>
 </body>
