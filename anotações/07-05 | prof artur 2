@@ -1,10 +1,45 @@
-O conceito de web como conhecemos hoje foi criado por Tim Berner-Lee em 1989.g
+>> Histórico
 
-Ele pesquisaa em método que possibilitasse aos cientistas do mundo inteiro compartilhar
+O conceito de web como conhecemos hoje foi criado por Tim Berner-Lee em 1989.
+
+Ele pesquisa em método que possibilitasse aos cientistas do mundo inteiro compartilhar
 eletroniamente os documentos.
 
 Em 1990, ele criou o protótipo de um navegador chamado Nexus, um protocolo para transmitir 
 arquivos denonimado HTTP e uma linguagem de marcação de texto chamada HTML.
+
+Todos os navegadores de internet possuem a capacidade de itnerpretar o HTML (Hyper Text Markup
+Language) que é uma linguagem de marcação de texto utilizada para produzir páginas na web.
+
+Um arquivo HTML é formado essencialmente por texto (conteudo) e tags. Sendo assim, quando o
+navegador recebe o arquvi Lê o HTML e interpreta todas as tags e atribui a formatação no conteúdo
+antes de exitir na tela do usuario
+
+---
+
+>> Tag
+
+A tag engloba trechos de conteúdo, dotando os de sentido e valor,
+Salvo algumas exceções que veremos mais adiante, a tags devem ser escritas aos partes e, 
+por isso, costumamos dizer que abrimos e fechamos uma tag.
+
+Exemplo de tag
+
+  <b> Conteúdo a ser Formatado </b>
+
+Note que na tag de fechamente existe uma barra "/"
+
+---
+
+>> Estrutura de uma página HTML
+
+Para escrevermos uma págima gtmlk, por mais simples que seja, precisamos utilizar no mínimo as 
+seguintes tags abaixo:
+
+<html> é a tag inicial de qualquer documento no formato html;
+<head> é uma seção da página que apresente informações gerais;
+<title> é a tag que informa o título da págnia na barra do navegador;
+<body> é a seção principal, na qual será escrito o contúedo da página.
 
 ---
 
