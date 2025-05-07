@@ -7,5 +7,30 @@
 </head>
 <body>
     <p>Minha primeira tabela</p>
+    <br>
+    <table border="1">
+        <tr>
+            <td>Técnicos</td>
+            <td>Notas </td>
+            <td>Conclusão</td>
+        </tr>
+        <tr>
+            <td>Johnny Mau</td>
+            <td>10!!</td>
+            <td>Aprovado!</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>0</td>
+            <td>Reprovou! :C</td>
+        </tr>
+        <tr>
+            <td>P. Diddy</td>
+            <td>6,5</td>
+            <td>Aprovado! Passou raspado :@</td>
+        </tr>
+        
+    </table>
+    <br>
 </body>
 </html>
