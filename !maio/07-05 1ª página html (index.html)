@@ -5,14 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Título da página</title>
 	</head>
-	<body>
+	<body id="body">
 		<p>Minha primeira página</p>
-        <a href="vitor.html">Minha página, clique aqui!</a>
-		<br><br>
+        	<div>
+		<a href="vitor.html">Minha página, clique aqui!</a>
+			<br><br>
 		<a href="tabela.html">Minha tabela, clique aqui!</a>
-		<br><br>
+			<br><br>
 		<a href="https://www.w3schools.com/html/">Site da w3schools! Acesse aqui!</a>
-		<br><br>
-		<img src="https://i.redd.it/5a5427q6nmse1.gif"></ing>
+			</div>
+			<div>
+				<br><br>
+		<img src="https://i.redd.it/5a5427q6nmse1.gif"></img>
+				<br><br>
+			</div>
+			<div>
+				<br>
+				<a href="#body">Voltar para o início da página</a>
+				<br>
+			</div>
 	</body>
 </html>
