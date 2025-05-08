@@ -1,3 +1,15 @@
-HTML = Informação
+HTML (Hyper Text Markup Language) = Informação
 CSS (Cascading Style Sheets) = Formatação
 JS (JavaScript) = Controle
+
+---
+
+background = cor do fundo
+color = cor do texto
+font-size= cor da fonte
+font-weight = grossura do texto
+border = 
+padding = alocação do texto
+text-align = alinhamento do texto
+border-radius = arredondamento do fundo
+margin = alteração de espaço entre linhas
