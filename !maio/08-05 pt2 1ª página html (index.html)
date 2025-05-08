@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+    
+    na linha abaixo, estaremos definido a cor do fundo do site sem ter que definir individualmente a cor do fundo, cor da fonte e o tamanho da fonte
+    junto com as proporções e tamanhos das bordas, textos, etc
+    
+    background = cor do fundo
+    color = cor do texto
+    font-size= cor da fonte
+    font-weight = grossura do texto
+    padding = alocação do texto
+    text-align = alinhamento do texto
+    border-radius = arredondamento do fundo
+    margin = alteração de espaço entre linhas
+    
+    -->
+
+    <style>
+        body{
+            background-color: black;
+            align-content: center;
+        }
+        html{
+            text-align: center;
+        }
+        p {
+            color: white;
+            font-size: 16px;
+            padding-left: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 50;
+            font-family: Helvetica;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: red;
+            font-weight: 500;
+            font-family: Helvetica;
+        }
+        h2{
+            color: white;
+            text-align: center;
+            font-weight: 250;
+            font-size: 180%;
+            font-family: Helvetica;
+        }
+        .img-container{
+            text-align: center;
+            display: block;
+        }
+        a{
+            text-align: center;
+            display: block;
+            margin: 15px;
+            color: dodgerblue;
+            font-family: Helvetica;
+        }
+        button{
+            border-radius: 10%;
+            font-size: 250%;
+        }
+        div{
+            margin: auto;
+            margin-bottom: 4.5%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>BOAS-VINDAS AO MEU SITE!! ٩(ˊᗜˋ*)و ♡</h1> <!--adicionando título para o site, sempre utilizar h1 para título grande, h2 para medio e h3 para pequeno-->
+    </div>
+    <div class="img-container">
+        <img src="https://i.redd.it/5a5427q6nmse1.gif" alt="gifteto"></img>
+    </div>  
+    <div>    
+    <h2>MINHAS REDES!!</h2>
+        <a href="https://www.youtube.com/@MizeraviGameplays">PIOR CANAL DO YOUTUBE LIXO!</a>
+        <a href="https://www.youtube.com/@astrazomii">SEGUNDO PIOR CANAL DO YOUTUBE</a>
+        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fastrazomii">MAIOR LACRADOR DO TWITTER!</a>
+        <br>
+        <a href='https://www.windows93.net/'><button>Hora dos games!!!</button></a>
+    </div>
+</body>
+</html>
