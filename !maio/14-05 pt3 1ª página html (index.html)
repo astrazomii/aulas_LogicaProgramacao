@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CSS</title>
+
+</head>
+<body>
+    <div class="intro">
+        <h1>Tênis</h1>
+        <p>O tênis é um dos esportes mais populares do mundo, com uma rica história, grandes competições e atletas lendários. Aqui está um dossiê detalhado sobre esse esporte:</p>
+    </div>
+    <div>
+        <h2>História</h2>
+        <p>O tênis surgiu no século XIX, derivado de jogos de raquete praticados na Europa. Em 1877, aconteceu o primeiro torneio de Wimbledon, consolidando o esporte como uma atividade organizada e profissional.</p>
+    </div>
+    <div>
+        <h2>Regras Básicas</h2>
+        <p>É jogado individualmente (simples) ou em duplas.</p>
+        <p>O objetivo é marcar pontos ao fazer a bola tocar o chão dentro da quadra adversária sem que o oponente consiga devolvê-la corretamente.</p>
+        <p>Os jogos podem ter três ou cinco sets, dependendo do torneio.</p>
+    </div>
+    <div>
+        <h2>Principais Torneios</h2>
+        <h3>Os quatro torneios do Grand Slam são os mais prestigiados:</h3>
+        <p>Aberto da Austrália – Quadras rápidas, realizado em Melbourne.</p>
+        <p>Roland Garros – Jogado no saibro, realizado em Paris.</p>
+        <p>Wimbledon – Quadras de grama, realizado em Londres.</p>
+        <p>US Open – Quadras duras, realizado em Nova York.</p>
+    </div>
+    <div>
+        <h2>Grandes Jogadores</h2>
+        <h3>O esporte tem ícones como:</h3>
+        <p>Roger Federer – Elegância e técnica impecável.</p>
+        <p>Rafael Nadal – Domínio no saibro e intensidade.</p>
+        <p>Novak Djokovic – Consistência e força mental.</p>
+        <p>Serena Williams – Uma das maiores jogadoras da história.</p>
+    </div>
+    <div>
+        <h2>Curiosidades</h2>
+        <p>A bola de tênis foi originalmente branca, mas mudou para amarela em 1972 para melhorar a visibilidade na TV.</p>
+        <p>Um saque pode ultrapassar 240 km/h em torneios profissionais.</p>
+    </div>
+    <div>
+        <a href="https://pt.wikipedia.org/wiki/T%C3%A9nis">Clique aqui para saber mais!</a>
+    </div>
+    <div>
+        <a href="formulario.html">Formulário</a>
+    </div>
+</body>
+</html>
