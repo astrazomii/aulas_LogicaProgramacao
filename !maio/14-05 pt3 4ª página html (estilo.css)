@@ -1,0 +1,14 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    background-color: burlywood;
+    font-size:36px
+}
+h2{
+    background-color: burlywood;
+    font-size:28px
+}
+p{
+    font-size: 18px;
+}
