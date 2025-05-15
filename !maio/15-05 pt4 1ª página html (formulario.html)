@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<form action="validar.html"></form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Formulário de Cadastro</h1>
+    </div>
+    <div class="caixa-formulario">
+        <div class="inserir-nome espaco">
+            <label for="nome">Nome:
+                <input type="nome" placeholder="Insira seu nome aqui!" required>
+            </label>
+        </div>
+        <div class="inserir-email espaco">
+            <label for="email">Email:
+                <input type="email" placeholder="Insira seu email aqui!" required>
+            </label>
+        </div>
+        <div>
+            <label for="numero espaco">Idade:
+                <input type="number" placeholder="Insira sua idade aqui!" required>
+            </label>
+        </div>
+        <div class="inserir-senha espaco">
+            <label for="senha">Senha:
+                <input type="password" placeholder="Insira sua senha aqui!" required>
+            </label>
+        </div>
+        <div class="espaco">
+            <div class="radio-option">
+                <input type="radio" name="outro" id="name" value="outro">
+                    <label for="homem">Homem</label>
+                <input type="radio" name="outro" id="name" value="outro">
+                    <label for="mulher">Mulher</label>
+                <input type="radio" name="outro" id="name" value="outro">
+                    <label for="nb">Não-Binário</label>
+            </div>
+            <div>
+                <input type="checkbox" name="confirmacao" value="confirmacao" required>
+                    <label for="confirmacao">Eu aceito os termos de serviço</label>
+            </div>
+            <div>
+                <br>
+                <a href="validar.html"></a><button type="submit">Enviar!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
