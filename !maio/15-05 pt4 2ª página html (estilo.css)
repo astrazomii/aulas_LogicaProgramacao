@@ -1,0 +1,19 @@
+body{
+    background-color: antiquewhite;
+    align-content: center;
+    text-align: center;
+}
+input{
+    border-radius: 5px;
+    padding: 5px;
+}
+.caixa-formulario{
+    background-color: wheat;
+    border-radius: 5px;
+    padding: 25px;
+    width: 400px;
+    margin: auto;
+}
+.espaco{
+    padding: 5px;
+}
