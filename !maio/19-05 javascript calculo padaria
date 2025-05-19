@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valor_pao = Number(0.12)
+        var valor_broa = Number(1.50)
+
+        var qtdPaes = Number(prompt("Quantos pães foram vendidos?"))
+        var qtdBroas = Number(prompt("Quantas broas foram vendidas?"))
+        
+        var valorArrecadadoPaes = qtdPaes * valor_pao
+        var valorArrecadadoBroas = qtdBroas * valor_broa
+        
+        var valorTotalArrecadado = valorArrecadadoPaes + valorArrecadadoBroas
+
+        var poupanca = valorTotalArrecadado * 10 / 100
+
+        alert("O total arrecadado é de: " + valorTotalArrecadado)
+        alert("A quantia à ser guardada na poupança é de: " + poupanca)
+
+    </script>
+</body>
+</html>
