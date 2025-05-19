@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("Informe seu nome: ")
+        var idade = prompt("Informe sua idade: ")
+        
+        alert("Meu nome é " + nome + ", e eu tenho " + idade + " anos.")
+    </script>
+    <script>
+        var  n1, n2, n3, soma, res
+            
+            n1 = Number(prompt("Insira a primeira nota: "))
+            n2 = Number(prompt("Insira a segunda nota: "))
+            n3 = Number(prompt("Insira a terceira nota: "))
+
+        soma = n1 + n2 + n3
+        res = soma / 3
+
+            alert("A média é de: " + res)
+
+    </script>
+    <script>
+
+        var cavs
+
+            cavs = prompt("Insira o número de cavalos: ")
+            alert("A quantidade de haras que terá de ser adquirida para os cavalos é de: " + cavs / 10)
+    </script>
+</body>
+</html>
