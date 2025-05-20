@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="functions.js"></script>
+    <title>aula JS</title>
+</head>
+<body>
+    <button type="button" onclick="metroquadrado()">Clique aqui para medir sua altura e comprimento</button>
+</body>
+</html>
