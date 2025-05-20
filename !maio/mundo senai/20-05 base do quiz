@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>QUIZ MAIS DIFICIL DO MUNDO</title>
+</head>
+<body>
+    <div>
+        <h1>QUIZ MTO FODA IMPOSSIVEL</h1>
+    </div>
+    <h2>QUEM FOI O RESPONSÁVEL PELO 11/9?</h2>
+    <div class=".caixa-opcoes">
+        <a href="errado.html"><button>FAUSTÃO!</button></a>
+        <br>
+        <a href="errado.html"><button>LUCIANO HULK!</button></a>
+        <br>
+        <a href="correto.html"><button>CELSO PORTIOLLI!</button></a>
+        <br>
+        <a href="errado.html"><button>OBAMA BA RACKEN!</button></a>
+    </div>
+</body>
+</html>
