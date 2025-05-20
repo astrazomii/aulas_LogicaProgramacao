@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERRADO!!!!</title>
+    
+    <style>
+        body{
+    background-color: red;
+    }
+        html{
+    text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>SE FODEU!</h1>
+        <a href="index.html">CLIQUE AQUI PARA REINICIAR</a>
+    </div>
+</body>
+</html>
