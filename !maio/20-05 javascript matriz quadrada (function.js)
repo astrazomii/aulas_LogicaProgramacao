@@ -1,0 +1,7 @@
+metroquadrado = function(){
+altura = prompt("Digite a altura: ")
+comprimento = prompt("Digite o comprimento: ")
+
+altura * comprimento;
+document.write ("<p>metro quadrado</p>" + altura * comprimento)
+}
