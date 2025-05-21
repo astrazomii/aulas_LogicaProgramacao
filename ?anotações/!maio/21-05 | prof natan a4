@@ -1,0 +1,19 @@
+> Este tipo de função é estática, ela não executa sua ação
+automaticamente. É preciso chamar a função para que
+cumpra sua ação.
+
+ex:
+  minhafuncao([arg1, arg2, ..., argn)}
+
+---
+
+> Com o uso do objeto construtor precedido pela palavra-chave "new":
+
+  var minhafuncao = new function(//aqui o bloco de código);
+
+> Com o uso da sintae literal ou funções expressões
+
+  var minha funcao = function(){
+  //aqui bloco de código
+  };
+
