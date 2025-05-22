@@ -11,3 +11,21 @@ Operadores de JavaScript:
 Instruções e declarações como:
   do-while, for-in, for-of, try-catch, let, var, const, if-else,
   switch e outras instruções e palavras-chave do JavaScript.
+
+---
+
+>> Operadores, Expressões e Comparações
+
+Aritméticos: +(soma), -(subtração), *(multiplicação), /(divisão) e %(resto)
+
+Agrupamento: () somente parênteses.
+
+Atribuição: =, +=, -=, *=, /=, %=
+
+Incrementar: ++
+
+Decrementar: --
+
+Comparativos: ==, ===, |=, |==, >, >=, <, <=
+
+---
