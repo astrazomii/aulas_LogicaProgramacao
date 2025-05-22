@@ -1,0 +1,6 @@
+function MUDEIII(){
+
+    let nome = prompt("Informe um nome");
+    document.getElementById("msgSaudacao").textContent = "Olá, " + nome;
+
+}
