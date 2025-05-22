@@ -1,0 +1,13 @@
+>> Objetos Globais
+
+Objetos padrão nativos: 
+  Array, Boolean, Date, Error, Function, JSON, Math, Number,
+  Object, RegExp, String, Map, Set, WeakMap e WeakSeat, entre outros.
+
+Operadores de JavaScript: 
+  instanceof, typeof, new, this, a precedência dos operadores e
+  muito mais.
+
+Instruções e declarações como:
+  do-while, for-in, for-of, try-catch, let, var, const, if-else,
+  switch e outras instruções e palavras-chave do JavaScript.
