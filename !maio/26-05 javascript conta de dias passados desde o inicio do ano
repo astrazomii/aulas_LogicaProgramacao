@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dia = Number(prompt("Informe o dia desejado: "))
+        var mes = Number(prompt("Informe o mês desejado (em numeração): "))
+
+        diasPassados = dia
+        mesesPassados = (mes - 1) * 30
+        total = diasPassados + mesesPassados
+
+        alert("Já se passaram " + total + " dias, desde o início do ano!")
+    </script>
+</body>
+</html>
