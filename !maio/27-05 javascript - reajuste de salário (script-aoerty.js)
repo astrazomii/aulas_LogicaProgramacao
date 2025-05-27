@@ -1,0 +1,16 @@
+var SA = Number(prompt("Digite o salário: "))
+var NS;
+
+if(SA<500){
+    NS = SA + (SA * 0.15)
+}
+
+else if(SA<=1000){
+    NS = SA + (SA * 0.10)
+}
+
+else{
+    NS = SA + (SA * 0.05)
+}
+
+alert("Seu novo salário é de " + NS)
