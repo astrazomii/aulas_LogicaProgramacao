@@ -1,0 +1,7 @@
+>> Operador ternário
+
+  if(var Op.Rel var){
+  True
+  }else{
+  False
+  Var Op.Rel var ? true: false  idade < 12 ? "gratuito":"paga"
