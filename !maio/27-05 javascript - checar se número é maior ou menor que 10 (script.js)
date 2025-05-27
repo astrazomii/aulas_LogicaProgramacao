@@ -1,0 +1,11 @@
+var numA = Number(prompt("Digite o primeiro valor: "))
+var numB = parseFloat(prompt("Digite o segundo valor: "))
+var somaVarX
+
+somaVarX = numA + numB
+if(somaVarX>10){
+alert(somaVarX + " (seu número é maior que 10)")
+}
+else{
+alert(somaVarX + " (seu número é menor que 10)")
+}
