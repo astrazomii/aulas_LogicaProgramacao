@@ -1,0 +1,7 @@
+let idade = Number(prompt("Informe sua idade: "))
+if(idade <= 12 || idade >= 60){
+    alert("Bem-vindo ao Reino Encantado! Entrada gratuita concedida")
+}
+else{
+    alert("Entrada paga. O reino ainda aguarda por sua magia!")
+}
