@@ -1,0 +1,16 @@
+var numA = Number(prompt("Digite seu primeiro valor: "))
+var numB = Number(prompt("Digite seu segundo valor: "))
+
+var somaVarX = (numA + numB)
+
+alert(somaVarX)
+
+if(somaVarX>=10){
+    var somaVarR1 = somaVarX + 5
+    alert("Atribuindo " + somaVarX + " com +5, o resultado será de: " + somaVarR1)
+}
+
+else{
+    var somaVarR2 = somaVarX - 7
+    alert("Atribuindo " + somaVarX + " com -7, o resultado será de: " + somaVarR2)
+}
