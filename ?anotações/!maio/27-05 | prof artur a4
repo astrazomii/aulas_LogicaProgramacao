@@ -5,3 +5,13 @@
   }else{
   False
   Var Op.Rel var ? true: false  idade < 12 ? "gratuito":"paga"
+
+>> Switch
+
+  switch(bairro){
+  case 'centro':
+    txent= 15.00
+    break
+  case 'ponte':
+    texent= 10.00
+    break
