@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var hrnormal, hrextra
+
+            hrnormal = (prompt("Digite as horas trabalhadas do funcionário: "))
+            hrextra = (prompt("Digite as horas extras trabalhadas do funcionário: "))
+
+        salarioBruto = (hrnormal * 10) + (hrextra * 15)
+        salarioLiquido = salarioBruto - (salarioBruto * 10 / 100)
+        alert("Salário líquido = " + salarioLiquido + "\nSalário bruto = " + salarioBruto)
+    </script>
+</body>
+</html>
