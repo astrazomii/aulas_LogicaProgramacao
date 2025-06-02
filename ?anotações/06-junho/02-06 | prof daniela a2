@@ -24,3 +24,8 @@ Estritamente Diferente, tipo valor (!==)
 
   alert(v1 === v2)
   </script>
+
+>> Operadores booleanos
+
+  B == B && C == B
+  B == B || C == B
