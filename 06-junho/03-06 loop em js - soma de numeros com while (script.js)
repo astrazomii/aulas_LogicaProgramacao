@@ -1,0 +1,6 @@
+let numlido = 1, soma = 0
+while(numlido > 0){
+    numlido = Number(prompt("Digite um número: \nPara encerrar a operação, digite 0."))
+    soma += numlido
+}
+alert("A soma total é de " + soma)
