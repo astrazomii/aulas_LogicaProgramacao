@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sexualidade = prompt("Digite seu gênero: \n(Masculino ou Feminino)")
+        var peso
+        switch(sexualidade){
+            case "masculino", "m":
+                var altura = Number(prompt("Digite sua altura: "))
+                peso = 22 * (altura * altura)
+                    alert("Seu peso ideal é de " + peso + "kg.")
+
+            case "feminino", "f":
+                altura = Number(prompt("Digite sua altura: "))
+                peso = 21 * (altura * altura)
+                    alert("Seu peso ideal é de " + peso + "kg.")      
+        }
+    </script>
+</body>
+</html>
