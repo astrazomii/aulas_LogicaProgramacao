@@ -1,0 +1,10 @@
+    let continuar = "sim";
+
+    while (continuar === "sim") {
+        let numDigitado = Number(prompt("Digite o número para realizar o cálculo: "));
+        alert(numDigitado + " multiplicado por 3 é: " + numDigitado * 3);
+        
+        continuar = prompt("Cálculo realizado! Você deseja continuar? (sim/nao)").toLowerCase();
+    }
+    
+    alert("Programa encerrado!");
