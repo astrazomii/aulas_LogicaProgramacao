@@ -1,0 +1,6 @@
+>> Vetores (Arrays)
+
+  const nomeArray = []
+  const Array = ['ana', 'ivo', 'joão', 'pedro']
+  Array.push ('pedro')
+  Array.pop()
