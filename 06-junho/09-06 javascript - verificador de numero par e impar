@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = Number(prompt("Insira o numero"))
+
+        if (num % 2 == 0){
+            alert("Par")
+        }else if(num % 2 != 0){
+            alert("Ímpar")
+        }else if(num > 0){
+            alert("positivo")
+        }else if(num===0){
+            alert("Neutro")
+        }else{
+            alert("negativo")
+        }
+
+        alert("fim")
+    </script>
+</body>
+</html>
