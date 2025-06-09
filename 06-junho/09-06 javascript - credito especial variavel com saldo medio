@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sm = Number(prompt("Digite o numero"))
+        if(sm >= 0 && sm <= 200){
+            alert("Nenhum crédito")
+        }
+        else if(sm > 200 && sm <= 400){
+            alert("Crédito especial de 20%: " + num / 0.20)
+        }else if(sm > 400 && sm <= 600){
+            alert("Crédito de 30%: " + num / 0.30)
+        }else{
+            alert("Crédito de 40%: " + num / 0.40)
+        }
+    </script>
+</body>
+</html>
