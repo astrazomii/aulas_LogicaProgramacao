@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("insire seu nome")
+        var nota1 = Number(prompt("insira a primeira nota do aluno"))
+        var nota2 = Number(prompt("insira a primeira nota do aluno"))
+        var soma = (nota1 + nota2) / 2
+        alert("merda da media = " + soma)
+
+        if(soma>=6 && soma <=10){
+            alert("aluno aprovado parabens!")
+        }else if(soma < 6 && soma >= 4){
+            alert("recuperaçao")
+        }
+        
+        else if(soma < 4 && media >=0){
+            alert("reprovou kkkkkkkk")
+        }
+
+        else{
+            alert("Valor inválido bro, tente outro valor")
+        }
+    </script>
+</body>
+</html>
