@@ -6,3 +6,15 @@
 4. Alterar o nome da Nova Pasta para javascript
 5. Abrir o Visual Studio Code
 6. Abrir pasta javascript
+
+>> Diferenças de While
+
+(PRÉ-CONDIÇÃO)
+  while(<c>){
+  //instruções
+  }do
+
+(PÓS CONDIÇÃO)
+  do{
+  //instruções
+  }while(<c>)
