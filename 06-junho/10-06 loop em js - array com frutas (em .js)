@@ -1,0 +1,38 @@
+const frutas = ["melância", "uva", "morango", "banana", "maçã", "abacaxi", "pera", "manga", "melão", "laranja"]
+let novaFrutas
+console.log(frutas)
+
+function buscarPorPosicao() {
+    posicao = prompt("Escola elemento do array")
+    alert = (frutas[posicao])
+}
+
+function tamanhoArray(){
+    alert(frutas.length)
+}
+
+function adicionarFinal(){
+    novaFrutas = prompt("Digite uma fruta:")
+    frutas.push(novaFrutas)
+    console.log(frutas)
+}
+
+function adicionarComeco(){
+    novaFrutas = prompt("Digite uma fruta:")
+    frutas.unshift(novaFrutas)
+    console.log(frutas)
+}
+
+function adicionarFinalSemPush(){
+    frutas(frutas.length) = novasFrutas
+    console.log(frutas)
+}
+
+function varrer(){
+    elementohtml = document.getElementById("elementosarray")
+    var estruturaHTML = ""
+    for(novaFrutas of frutas){
+        estruturaHTML += '<p>' + novaFrutas + '</p><br>'
+    }
+    elementohtml.innerHTML = estruturaHTML
+}
