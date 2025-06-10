@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="b1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="buscarPorPosicao()">pegar fruta por elemento array</button>
+    <button onclick="tamanhoArray()">mostrar arrays</button>
+    <button onclick="adicionarFinal()">adicionar fruta no final</button>
+    <button onclick="adicionarComeco()">adicionar fruta no começo</button>
+    <button onclick="adicionarFinalSemPush()">adicionar fruta no final SEM PUSH</button>
+    <br><br>
+    <button onclick="varrer()">varrer</button>
+
+    <div id="elementosarray"></div>
+</body>
+</html>
+
