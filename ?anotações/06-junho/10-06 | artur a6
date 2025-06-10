@@ -18,3 +18,11 @@
   do{
   //instruções
   }while(<c>)
+
+>> Vetores (array)
+
+  var nome = "ivo"
+  const nomes = []
+
+- Push Unshift (Adicionar)
+- Pop Shift (Remover)
