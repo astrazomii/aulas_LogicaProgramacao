@@ -1,0 +1,32 @@
+var condicao = true
+
+do{
+    alert("teste1")
+    condicao = confirm("1 Deseja continuar?")
+}while(condicao)
+
+//
+
+do{
+    alert("teste2")
+}while(confirm("2 Deseja continuar?"))
+
+//
+
+var condicao = true
+
+while(condicao){
+    alert("teste3")
+    condicao = confirm("3 Deseja continuar?")
+}
+
+//
+
+condicao = true
+while(condicao){
+    num = Number(prompt("Digite um número"))
+    if(isNaN(num))
+        continue
+    alert("teste4")
+    condicao = confirm("4 Deseja continuar?")
+}
