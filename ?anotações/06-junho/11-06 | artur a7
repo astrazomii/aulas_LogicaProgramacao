@@ -48,3 +48,9 @@ pos x qnt
   cidades.forEach(function(cid)){
   //cid
   }
+
+>> indexOf
+
+  indexOf(inicio)
+  lastindexOf(fim)
+  Boolean <= include(param)
