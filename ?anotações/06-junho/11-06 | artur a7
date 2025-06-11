@@ -12,3 +12,15 @@ pos x qnt
 
   const frutas = frutas.slice(pos)
   
+>> Tipos de for
+
+  for(i=0; i<ar.length; i++)
+  var=ar[i]
+
+--
+
+  fr(var of ar)
+
+--
+
+  forEach (função())
