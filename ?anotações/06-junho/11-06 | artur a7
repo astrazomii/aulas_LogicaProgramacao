@@ -6,7 +6,7 @@ pos x qnt
  0     1
 
   frutas[1] = "uva"
-  frutas.lenght
+  frutas.length
 
 >> Slice e Splice
 
