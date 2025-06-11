@@ -1,0 +1,99 @@
+const frutas = ["melância", "uva", "morango", "banana", "maçã", "abacaxi", "pera", "manga", "melão", "laranja"]
+let novaFrutas
+console.log(frutas)
+
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(function(num, i) { //Usando forEach com function
+    console.log(num * 2 + i);
+});
+
+numbers.forEach(num => { //Usando forEach com Arrow
+    console.log(num * 2);
+})
+
+for (const num of numbers){ //Usando com for of
+    console.log(num * 2);
+}
+
+
+function buscarPorPosicao() {
+    posicao = prompt("Escola elemento do array")
+    alert(frutas[posicao])
+}
+
+function tamanhoArray(){
+    alert(frutas.length)
+}
+
+function adicionarFinal(){
+    novaFrutas = prompt("Digite uma fruta:")
+    frutas.push(novaFrutas)
+    console.log(frutas)
+}
+
+function adicionarComeco(){
+    novaFrutas = prompt("Digite uma fruta:")
+    frutas.unshift(novaFrutas)
+    console.log(frutas)
+}
+
+function adicionarFinalSemPush(){
+    frutas[frutas.length] = novaFrutas
+    console.log(frutas)
+}
+
+function varrer(){
+    elementohtml = document.getElementById("elementosarray")
+    var estruturaHTML = ""
+    for(novaFrutas of frutas){
+        estruturaHTML += '<p>' + novaFrutas + '</p><br>'
+    }
+    elementohtml.innerHTML = estruturaHTML
+}
+
+function remover() {
+    if (frutas.length === 0) {
+        alert("Arrays vazia.");
+        return;
+    }
+    
+    frutas.pop();
+    console.log(frutas);
+}
+
+
+function fatiar(){
+    pos1 = prompt("Digite a posição do corte")
+    const subfrutas = frutas.slice(pos1)
+    console.log(subfrutas)
+}
+function recortar(){
+    const subfrutas = frutas.splice(pos1, pos2 - pos1)
+}
+function tamanho(){
+    alert(frutas.length)
+}
+
+function listar(meu_array){
+    elemDiv = document.getElementById("listar")
+    conteudoHTML = ""
+    for (const frt of meu_array){
+        conteudoHTML += `<li> ${frt}`
+    }
+
+}
+
+function listarEach(){
+    elemDiv = document.getElementById("listar")
+    conteudoHTML = ""
+    frutas.forEach((frt) => {
+        conteudoHTML += `<li> ${frt}`  
+    })
+}
+
+function procurar(){
+    palavra = prompt("Informe a fruta para procurar:")
+    pos = frutas.indexOf(palavra)
+    alert(palavra)
+}
