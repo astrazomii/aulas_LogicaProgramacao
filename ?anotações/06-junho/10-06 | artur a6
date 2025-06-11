@@ -21,6 +21,8 @@
 
 >> Vetores (array)
 
+Serve para armazenar variáveis.
+
   var nome = "ivo"
   const nomes = []
 
