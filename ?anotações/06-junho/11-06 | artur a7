@@ -17,10 +17,32 @@ pos x qnt
   for(i=0; i<ar.length; i++)
   var=ar[i]
 
---
+---
 
-  fr(var of ar)
+  for(var of array)
 
---
+>> Arrow e forEach
+  
+  nvms = [10, 7, 8, 2, 3]
 
   forEach (função())
+  soma=0
+  nvms.forEach(nvms=.soma+=nvms)
+
+  function nome(){}
+  var soma = function(){
+  return A+B
+  }
+  arrow function => soma => () A+B;
+
+>> forEach
+
+  syntax
+  array.forEach(function(elemento, index, array){
+  //instrução
+  });
+
+  for(cid of cidades)
+  soma += cid
+  cid=cidades[i]
+  cidades.forEach(function(cid))
