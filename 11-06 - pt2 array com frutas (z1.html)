@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="z1.js" defer></script>
+    <title>Manipulação de Arrays</title>
+
+    <style>
+        button{
+            border-radius: 2.5%;
+            background-color: lightgreen;
+            font-size: medium;
+            border-color: lightgreen;
+
+            font-size: 250%;
+            height: 70px;
+            padding: 0.8%;
+        }
+
+        h1{
+            font-size: 500%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Frutas</h1>
+
+    <button onclick="buscarPorPosicao()">Buscar fruta por posição</button>
+    <button onclick="tamanhoArray()">Mostrar tamanho do array</button>
+    <button onclick="adicionarFinal()">Adicionar fruta no final</button>
+    <button onclick="adicionarComeco()">Adicionar fruta no começo</button>
+    <button onclick="adicionarFinalSemPush()">Adicionar fruta no final SEM PUSH</button>
+    <br><br><br><br>
+    
+    <button onclick="fatiar()">Fatiar array</button>
+    <button onclick="recortar()">Recortar array</button>
+    <button onclick="tamanho()">Tamanho do array</button>
+    <button onclick="remover()">Remover último elemento</button>
+    <br><br><br><br>
+    
+    <button onclick="varrer()">Varrer array</button>
+    <button onclick="listar()">Listar</button>
+    <button onclick="listarEach()">Listar com Each</button>
+    <button onclick="procurar()"></button>
+     
+    <div id="elementosarray"></div>
+    <div id="listar"></div>
+</body>
+</html>
