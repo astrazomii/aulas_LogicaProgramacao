@@ -45,4 +45,6 @@ pos x qnt
   for(cid of cidades)
   soma += cid
   cid=cidades[i]
-  cidades.forEach(function(cid))
+  cidades.forEach(function(cid)){
+  //cid
+  }
