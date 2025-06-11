@@ -7,3 +7,8 @@ pos x qnt
 
   frutas[1] = "uva"
   frutas.lenght
+
+>> Slice e Splice
+
+  const frutas = frutas.slice(pos)
+  
