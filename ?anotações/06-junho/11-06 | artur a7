@@ -1,0 +1,9 @@
+>> Continuação de Vetores (Array)
+
+  const frutas = [] / [10, "uva", 27, "a", true]
+
+pos x qnt
+ 0     1
+
+  frutas[1] = "uva"
+  frutas.lenght
