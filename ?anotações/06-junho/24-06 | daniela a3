@@ -1,0 +1,24 @@
+>> Eventos
+
+1º Adicionar o evento onclick
+
+  HTML
+  <div id="aula9" onclick="clicar()">
+    Botão
+  </div>
+
+  CSS
+  background: gray
+  text-align: center
+  padding> 100px
+  width: 300px
+
+2º Criar a função clicar() chamada pela ação de clicar na div de id="aula9"
+
+  <script>
+    function clicar(){
+    aula9.style.background = 'red'
+    aula9.innerText = 'Clicou'
+    aula9.style.color = 'white'
+  }
+  </script>
