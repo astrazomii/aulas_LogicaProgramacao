@@ -1,0 +1,95 @@
+const diviniciar = document.getElementById("diviniciar")
+const divareajogo = document.getElementById("areajogo")
+const titulodapergunta = document.getElementById("titulopergunta")
+const btnIniciar = document.getElementById("botaoiniciar")
+const prxPergunta = document.getElementById("botaoProximo")
+const divPlacar = document.getElementById("placar")
+const qtdAcertos = document.getElementById("quantidadeAcertos")
+const btnReiniciar = document.getElementById("botaoreiniciar")
+
+btnIniciar.addEventListener("click", iniciarjogo)
+prxPergunta.addEventListener("click", proximapergunta)
+
+const perguntas = [
+    {pergunta:"Qual é o maior deserto do mundo?", opcoes:["saara","antartida","atacama","chile"], correta:"antartida"},
+    {pergunta:"Qual é a capital do Brasil?", opcoes:["RJ","SP","Brasilia","chile"], correta:"Brasilia"},
+    /*{pergunta:"Qual é a capital da Austrália?", opcoes:["Palhoça","urubici","Canguru","chile"], correta:"Canguru"},
+    {pergunta:"Qual é o país com maior população no mundo?", opcoes:["China","India","Paraguai","chile"], correta:"India"},
+    {pergunta:"Qual a linha imaginária que atravessa o Brasil?", opcoes:["Anemia","Atlantida","Capricornio","chile"], correta:"Atlantida"},
+    {pergunta:"Qual o oceano que banha o Brasil?", opcoes:["Atlantico","Pacifico","Indico","chile"], correta:"Pacifico"},
+    {pergunta:"Quem dá mais o rabo da sala V2?", opcoes:["Johnny Mau","Gustavo","Penisvaldo","Brr brr patapim guy"], correta:"Gustavo"},
+    {pergunta:"Qual o melhor jogo de todos os tempos?", opcoes:["Call of Mustard (viral meme)","Call of Diddy","The Last of Cus","The Last of Us Battle Royale", "Red Dead Redemption 2 Mobile Game", "Diddy Bird", "Bunda Royale", "Broxa Stars", "2099 Cyberputas", "Astrofode", "Golden of wer"], correta:"Call of Mustard (viral meme)"},
+    */
+]
+let indiceperguntas = 0
+
+let contadorRespostasCorretas = 0
+
+let botaodepergunta = document.createElement("button")
+
+
+/* Funções */
+function iniciarjogo(){
+    fecharbotaoinicio()
+    abrirareajogo()
+}
+
+function fecharbotaoinicio(){
+    diviniciar.innerHTML = " "
+}
+
+function abrirareajogo(){
+    divareajogo.classList.add("active")
+    prxPergunta.disabled = true
+
+    titulodapergunta.textContent = perguntas[indiceperguntas].pergunta
+    areaperguntas.innerHTML = ""
+
+    perguntas[indiceperguntas].opcoes.forEach(opcao => {
+    let botaodepergunta = document.createElement("button")
+    botaodepergunta.textContent = opcao
+    botaodepergunta.classList.add("answer-btn")
+    botaodepergunta.addEventListener("click", () => validarrespostacorreta(opcao))
+
+    areaperguntas.appendChild(botaodepergunta)
+ })
+}
+
+function validarrespostacorreta(btnSelecionado){
+    const botoesdaTela = document.querySelectorAll(".answer-btn")    
+    const respostacorreta = perguntas[indiceperguntas].correta
+    botoesdaTela.forEach(botao => {
+        if(botao.textContent === respostacorreta){
+            botao.classList.add("correct")
+        }
+        if(botao.textContent === btnSelecionado && botao.textContent != respostacorreta){
+            botao.classList.add("incorrect")
+            botao.classList.add("disable")
+        }
+        botao.classList.add("disabled")
+        botao.disabled = true
+    })
+    if (btnSelecionado === respostacorreta) {
+        contadorRespostasCorretas++
+        console.log("Respostas corretas: " + contadorRespostasCorretas)
+    }
+
+    prxPergunta.disabled = false
+}
+
+
+function proximapergunta(){
+    indiceperguntas++
+    if (indiceperguntas < perguntas.length)
+        abrirareajogo()
+    else{
+        encerrarJogo()
+    }
+}
+
+function encerrarJogo(){
+    divareajogo.classList.remove("active")
+    divPlacar.classList.add("active")
+    qtdAcertos.textContent = `Fim de jogo! Você acertou ${contadorRespostasCorretas} de  ${perguntas.length}`
+    btnReiniciar.addEventListener("click", () => location.reload())
+}
