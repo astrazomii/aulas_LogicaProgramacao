@@ -1,0 +1,147 @@
+>> Circuitos elétricos e Associação de Resistores
+
+-> Materias Condutores
+
+Acender luz, ligar motores, produzir calor...
+Indispensável para que a energia elétrica possa ser utilizada.
+
+Permite a existência de corrente elétrica (i) toda a vez se aplica uma tensão elétrica (V).
+O que faz material sólido ser condutor de eletricidade é a intensidade de atração entre o núcleo e os elétrons livres.
+Quanto menor for a atração, maior é a capacidade de deixar a corrente elétrica fluir.
+
+          resistência
+------------------------------->
+prata / cobre / ouro / aluminio
+
+-> Materiais Isolantes
+
+Forte oposição à circulação de corrente elétrica (i) na sua estrutura.
+
+-> Circuitos Elétricos
+
+Caminho fechado por onde circula a corrente elétrica.
+Pode ter efeitos diversos, ligar um som, acender luz, gerar movimento, ligar um motor, esteira, entender um toque na tela do celular, ligar a TV, emitir luz...
+
+É formado por no mínimo três componentes
+
+1. Fonte geradora (Ex: Tomada)
+2. Carga (Ex: Celular)
+3. Condutor (Ex: Carregador)
+
+-> Símbolos de um circuito elétrico
+
+-> Circuito Série
+
+Componentes (cargas) estão ligados um após o outro. Um único caminho para a corrente elétrica. A tensão é diferente em cada componente.
+Ex: Hipotéticamente, se formos liberados ao intervalo, porém exigissem que fossemos apenas por um caminho até a cantina, iriamos seguir apenas este caminho fechado.
+
+-> Circuito Paralelo
+
+Componentes (cargas) estão ligados paralelos um ao outro. A corrente é diferente em cada ponto do circuito, dependendo da resistência de cada componente.
+A tensão é igual em todos os componentes.
+Ex: Hipotéticamente, se formos liberados ao intervalo, porém tivesse caminhos paralelos até chegar na cantina, eles iriam seguir seus caminhos e se dividir.
+
+-> Circuito Misto
+
+Componentes (cargas) ligados em série e em paralelos.
+
+--- + ---
+
+>> Resistência Elétrica
+
+Propriedade física que evita a livre passagem de corrente elétrica, dissipando em energia térmica (calor). Unidade de medida é o Ohm (Ω).
+Está presente na maioria dos circuitos eletrônicos: Aquecedor, churrasqueira elétrica, chuveiro elétrico...
+
+-> Resistores em série
+
+Soma-se as resistências diretamente.
+  Req = R1 (10Ω / Ohms) + R2 (25Ω / Ohms) + R3 (30Ω / Ohms) = 65
+
+-> Resistores em Paralelo
+
+Soma-se o inverso das resistências.
+  1 / Req = 1/R1 + 1/R2 + ... + 1/Rn
+
+Quando temos duas resistências, pode-se usar:
+  Req = R1*R2/R1+R2
+
+Quanto os resistores tiverem o mesmo valor:
+  Req = R/n
+
+--- + ---
+
+>> Exercício 1
+
+1. O que são materiais condutores?
+Resposta: Conduz a eletricidade; Caminho fechado onde circula eletricidade
+
+2. O ar é um condutor ou um isolante?
+Resposta: Isolante
+
+3. Por que é usado o cobre e não o ouro se ele é o melhor condutor?
+Resposta: Porque de investimento; Cobre é a opção mais barata comparada ao ouro.
+
+4. O que é um circuito elétrico?
+Resposta: Caminho onde se é circula a eletricidade.
+
+5. Cite exemplos de cargas, fonte geradoras e condutores.
+Resposta:
+Cargas = Celular, fone de ouvido sem fio, alto-falante sem fio...
+Fonte geradora = Tomada, bateria, pilha...
+Condutor = Fio de cobre, carregador...
+
+>> Exercício 2
+
+1. Desenhe o simbolo da fonte geradora:
+Resposta: (Feita em caderno)
+
+2. O que é um circuito em série? E em paralelo?
+Resposta: Em série segue apenas um único caminho, enquanto o paralelo possui diversos caminhos.
+
+3. Qual a tensão de R3 na figura abaixo? E em R4?
+Resposta: Ambos estão em 1.5V.
+
+4. Indique qual a ligação entre os resistores (série ou paralelo) da figura abaixo:
+Resposta: Começa com a fonte geradora em 12V, depois indo para R1 e R2 em circuito série, depois indo para R3 e R4 em paralelo, indo para R5 em série, 
+R6 e R7 em paralelo, e por fim voltando para a fonte geradora.
+
+>> Exercício 3:
+
+1. Um circuito paralelo que possui fonte geradora de 12V, e duas resistências, uma com 6Ω e a outra com 3Ω.
+Resposta: 6*3 / 6+3 = 18 / 9 = 2Ω
+Req = 2Ω
+
+2. Um circuito paralelo que possui fonte geradora de 12V, e três resistências, uma com 6Ω, outra com 3Ω, e a última com 2Ω.
+Resposta: 6*3 / 6+3 = 18 / 9 = 2Ω
+Como já sabemos o valor das resistências de 6Ω e 4Ω, apenas abreviamos como o resultado da 1 questão, ou seja, 2Ω.
+2*2 / 2+2 = 4/4 = 1Ω
+Req = 1Ω
+
+3. Um circuito paralelo que possui fonte geradora de 12V, e três resistências, porém todas as três possuem 12Ω.
+Resposta: 12/3 = 4Ω
+Req = 4Ω
+
+4. Um circuito paralelo que posui fonte geradora de 12V, e três resistências, todas possuem 30Ω.
+Resposta: 30/3 = 10Ω
+Req = 10Ω
+
+5. Encontre o resistor equivalente dos circuitos abaixo.
+
+A. Um circuito paralelo que posui fonte geradora de 12V, e três resistências, uma possui 12Ω, outra possui 6Ω e a última possui 4Ω.
+Resposta: 12*6 / 12+6 = 4Ω
+4*4 / 4+4 = 2Ω
+Req = 8Ω
+
+B. Um circuito paralelo que posui fonte geradora de 12V, e três resistências, duas possui 10Ω e a outra possui 7Ω.
+Resposta: 10 / 2 = 5Ω
+5*7 / 5+7 = 12Ω
+Req = 12Ω
+
+C. Um circuito paralelo que posui fonte geradora de 12V, e três resistências, uma possui 1.5kΩ, outra possui 1kΩ e a última possui 2.2kΩ.
+Resposta: 1500+1000+2.200 = 4.7kΩ
+Req = 4.7kΩ
+
+D. Um circuito misto que posui fonte geradora de 12V, e seis resistências, uma possui 10Ω, outra possui 25Ω, outra possui 0.5Ω, duas possuem 30Ω e a última possui 6Ω.
+Resposta: (Coomeçando pelos paralelos) 30*6 / 30+6 = 180/36 = 5Ω
+10Ω + 25Ω + 500Ω + 30Ω + 5Ω = 570Ω
+Req = 570Ω
