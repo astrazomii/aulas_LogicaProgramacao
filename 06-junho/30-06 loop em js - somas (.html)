@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let x = 10; x>=0; x--){
+        if(x>0){
+            alert(x)
+        }else{
+            alert("FEliz ano novo!")
+            }
+        }
+    </script>
+   
+    <script> /* ######### Soma de valores #########*/
+        var soma = 0
+
+        for(x = 1; x <= 10; x++){
+            soma = soma + x
+            alert("Intermediário: " + soma + " + " + x + " = " + (soma + x))
+        }
+        alert("Final: " + soma)
+    </script>
+
+    <script> /* ######### Soma de pares e impares ######### */
+        var somaPar = 0
+        var somaImpar = 0
+
+        for(let x = 1; x <= 10; x++){
+        if(x % 2 == 0){
+            somaPar = somaPar + x
+            alert("Soma par: " + x + " + " + somaPar + " = " + (somaPar + x))
+        }else{
+            somaImpar = somaImpar + x
+            alert("Soma impar: " + x + " + " + somaImpar + " = " + (somaImpar + x))
+        }}       
+    </script>
+
+    <script> /* ######### Soma múltiplo de 3 ######### */
+        var somaMult = 0
+
+        for(let x = 1; x <= 10; x++){
+            if(x % 3 == 0){
+                somaMult = somaMult + x
+            }
+        }
+
+        alert(somaMult)
+    </script>
+</body>
+</html>
