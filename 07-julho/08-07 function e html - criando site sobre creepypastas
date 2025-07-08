@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="estilo.css">
+    <title>C=======================================3</title>
+
+    <style>
+        html{
+    align-content: center;
+}
+body{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+h1, h2, h3{
+    color: red;
+    text-align: center;
+}
+p{
+    color: white;
+    width: 400px;
+}
+
+.ativa { 
+    display: block; 
+}
+
+.pagina{
+    text-align: center;
+    display: none;
+}
+.site{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+    </style>
+
+    <script>
+        function mostrarPagina(nome) {
+    document.querySelectorAll('.pagina').forEach(div => div.classList.remove('ativa'));
+
+    if (nome === 'inicio') {
+        document.getElementById('paginaInicial').classList.add('ativa');
+    } else {
+        document.getElementById('pagina' + nome.charAt(0).toUpperCase() + nome.slice(1)).classList.add('ativa');
+    }
+}
+    </script>
+</head>
+<body>
+    <div class="site">
+    <div id="INICIO" class="ativa">
+        <h1>BEM-VINDOS AO SITE MAIS ASSUSTADOR DO MUNDO</h1>
+        <h2>booooo medo medo medo</h2>
+        <button onclick="mostrarPagina('momo')"><img src="momoassustadora.webp" width="256" height="256"></button>
+        <button onclick="mostrarPagina('jeff')"><img src="jeffasustador.png" width="256" height="256"></button>
+        <button onclick="mostrarPagina('lula')"><img src="lulaasustador.webp" width="256" height="256"></button>
+    </div>
+
+    <div id="paginaMomo" class="pagina">
+        <h1>A História da Momo</h1>
+        <h2>Ato 1</h2>
+        <p>Clara era uma adolescente comum, que passava as tardes navegando nas redes sociais e conversando com os amigos pelo celular.
+           Uma noite, quando estava sozinha no quarto, seu telefone vibrou com uma mensagem de um número desconhecido. 
+             Curiosa, ela abriu e se deparou com a foto perturbadora de uma figura esquelética, com olhos enormes e um sorriso macabro — era Momo. 
+             A mensagem dizia apenas: “Você me vê?” Clara sentiu um frio na espinha, mas achou que fosse uma brincadeira de mau gosto. 
+             Logo em seguida, outras mensagens começaram a chegar, cada vez mais assustadoras e insistentes. 
+             Ela tentou ignorar, mas a sensação de ser observada crescia a cada instante. 
+             Durante a noite, Clara teve pesadelos onde Momo aparecia em seu quarto, falando com uma voz sussurrante, ordenando que ela fizesse coisas perigosas. 
+             O medo começou a dominar seus pensamentos, e ela sentiu que algo muito errado estava acontecendo.</p>
+
+        <h2>Ato 2</h2>
+        <p>No dia seguinte, Clara tentou falar com os amigos sobre as mensagens, mas ninguém acreditava nela. 
+             Eles disseram que era só uma lenda urbana, um boato criado para assustar pessoas. 
+             Mesmo assim, as mensagens continuavam chegando, não só para ela, mas também para seus amigos, que começaram a sentir uma presença estranha perto deles. 
+             A família de Clara ficou preocupada com seu comportamento estranho, já que ela mal dormia e estava cada vez mais retraída. 
+             Determinada a acabar com aquilo, Clara pesquisou obsessivamente sobre Momo e descobriu que era uma figura criada na internet, associada a uma série de vídeos assustadores que viralizaram, mas sem provas concretas de que fosse real. 
+             Essa descoberta, porém, não trouxe conforto; ao contrário, ela se sentiu mais isolada e assustada, pois sabia que, mesmo sendo uma lenda, aquilo estava afetando sua mente.</p>
+        
+        <h2>Ato 3</h2>
+        <p>Em uma noite chuvosa, Clara decidiu tomar uma atitude drástica: desligar o celular e todas as suas redes sociais para tentar se afastar da influência de Momo. 
+             Ela se trancou no quarto, tentando focar em algo que a distraísse, como um livro ou música, mas o medo não a deixava em paz. 
+             Sentia que Momo estava ali, na escuridão, esperando o momento certo para atacar. Tentou dormir, mas o silêncio do quarto era quebrado por sussurros que pareciam vir de todos os cantos. 
+             Finalmente, exausta, ela adormeceu. Quando acordou, seu celular estava sobre a mesa — e, para seu horror, ele vibrou sozinho. 
+             No visor, uma mensagem: “Eu nunca desapareço”. O pânico tomou conta, mas Clara sabia que não podia se deixar dominar pelo medo.</p>
+            
+        <h2>Ato 4</h2>  
+        <p>Nos dias seguintes, Clara buscou ajuda com profissionais, para entender e superar o que estava vivendo.
+             Com o apoio dos amigos e da família, começou a recuperar o controle de sua mente e vida. 
+             Percebeu que Momo, apesar de assustador, era apenas uma manifestação do medo que habitava nela mesma e em outras pessoas. 
+             Aos poucos, a presença das mensagens foi diminuindo, até desaparecer. 
+             No entanto, em uma última noite, enquanto ela apagava a luz para dormir, o celular voltou a vibrar silenciosamente no escuro. 
+             Tremendo, Clara viu a mensagem: “Eu estou sempre aqui, esperando.” 
+             Ela respirou fundo, fechou os olhos e decidiu que não deixaria mais o medo controlar sua vida — fosse Momo real ou não, sua força interior seria maior.</p>
+            
+        <button onclick="mostrarPagina('inicio')">Retornar à página inicial</button>
+    </div>
+
+    <div id="paginaJeff" class="pagina">
+        <h1>A História do Jeff</h1>
+        <p>Página 1 do livro do Jeff...</p>
+        <button onclick="mostrarPagina('inicio')">Retornar à página inicial</button>
+    </div>
+
+    <div id="paginaLula" class="pagina">
+        <h1>A História do Lula</h1>
+        <p>Página 1 do livro do Lula...</p>
+        <button onclick="mostrarPagina('inicio')">Retornar à página inicial</button>
+    </div>
+</div>
+    <script src="codigo.js"></script>
+</body>
+</html>
