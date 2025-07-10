@@ -70,19 +70,22 @@ Ou podemos manipular:
 
 Substituindo na Lei de Ohm, tem-se o seghuinte:
 
-  Potência:
+  Potência (P):
     V * I
     R * I²
     V² / R
-  Tensão:
+
+  Tensão (V):
     R * I
     P / I
     √(P * R)
-  Resistência:
+
+  Resistência (R):
     V / I
     V² / P
     P / I²
-  Corrente:
+
+  Corrente (I):
     V / R
     P / V
     √(P / R)
@@ -110,7 +113,30 @@ Calcule a potência desse aquecedor.
 Um acendedor de cigarro de um automóvel funciona com 12V fornecidos pela bateria.
 Sabendo que a resistência é de 3Ω, qual a potência desse aquecedor?
 
->> Exercícios
+    V = 12V
+    R = 3
+    P = ?
+
+    P = V² / R
+    P - 12² / 3
+    P = 144 / 3
+    P = 48W
+
+- Exemplo 7: 
+Qual a tensão de alimentação de um equipamento de 2A com potência 16W?
+
+    I = 2A
+    P = 16W
+    V = ?
+
+    V = P / I
+    V = 16 / 2
+    V = 8V
+
+-> Potência nominal: alguns aparelhos obedecem uma tensão previamente esbalecida, como chuveiros (110V ou 220V)
+
+--- + ---
+>> Exercícios 1
 
 -> 1 Qual a equação da Lei de Ohm?
 
@@ -152,3 +178,41 @@ f) V = 60V
    I = ?
 Resposta: 60 / 680 = 0,08A
    
+>> Exercícios 2
+
+-> 1 O que é potência elétrica? Qual a sua unidade de medida?
+
+-> 2 Dê as equações e as unidades de medida para corrente, tensão e potência elétrica.
+
+-> 3 No circuito abaixo, calcule os valores faltantes:
+
+a) V = 8V
+   R = 4Ω
+   I = ?
+   P = ?
+
+
+b) V = 2V
+   R = ?
+   I = 0,2A
+   P = ?
+
+c) V = ?
+   R = ?
+   I = 25mA
+   P = 0,3W
+
+d) V = 10V
+   R = ?
+   I = ?
+   P = 2,5kW
+
+e) V = 12V
+   R = ?
+   I = 3A
+   P = ?
+
+f) V = 1V
+   R = ?
+   I = ?
+   P = 200mW
