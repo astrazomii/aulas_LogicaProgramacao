@@ -1,5 +1,154 @@
 >> Lei de Ohm
 
-  Estabelece uma relação entre as grandezas elétricas: Tensão (V), Corrente (V) e Resistência (R) em um circuito.
+Estabelece uma relação entre as grandezas elétricas: Tensão (V), Corrente (V) e Resistência (R) em um circuito.
 
-  
+    i (Corrente) = V/R [A]
+    R (Resistência) = V/I [Ω]
+    V (Tensão) = R * i [V]
+
+- Exemplo 1 de Corrente:
+
+    V = 6V
+    R = 120Ω
+    I = ?
+
+    I = V/R
+    I = 6/120
+    I = 0,05A
+
+- Exemplo 2 de Resistência:
+
+    V = 9V
+    R = ?
+    I = 300mA
+
+    R = V/i
+    R= 9/0,3
+    R = 30Ω
+
+- Exemplo 3 de Tensão:
+
+    V = ?
+    R = 22kΩ
+    I = 100mA
+
+    V = R * I
+    V = 22000 * 0,100
+    V = 2200V
+
+>> Potência Elétrica
+
+Existem lâmpadas que não produzem a mesma quantidade de luz.
+Aquecedores que esquentam mais rápido que outros.
+Chuveiros que aquecem mais rápido que outros.
+Isso se deve a uma POTÊNCIA ELÉTRICA (P) diferente, medido em Watt (W).
+
+1 Watt corresponde à potência dissolvida em 1 segundo à uma carga alimentada por 1V e com uma corrente elétrica de 1A.
+
+    P = V * I [W]
+
+Como vimos, P = V * I, sendo V tensão em Volts (V), I a corrente elétrica em Ampères (A), e por consequência a potência P em Watt (W).
+
+- Exemplo 4 de Potência:
+
+Uma lanterna que 4 pilhas AAA, somando 6V consome uma corrente de 0,5A. Qual a potência da lâmpada?
+
+    V = 6V
+    I = 0,5A
+    6 * 0,5 = 3W
+
+Ora, se sabemos a fórmula da potência, podemos encontrar a da corrente e da tensâo também
+
+    P = V * I [W]
+    P = R * I² [W]
+    P = V² / R [W]
+
+Ou podemos manipular:
+
+    I = P / V
+    V = P / I
+
+Substituindo na Lei de Ohm, tem-se o seghuinte:
+
+  Potência:
+    V * I
+    R * I²
+    V² / R
+  Tensão:
+    R * I
+    P / I
+    √(P * R)
+  Resistência:
+    V / I
+    V² / P
+    P / I²
+  Corrente:
+    V / R
+    P / V
+    √(P / R)
+
+Para facilitar, podemos fazer um triângulo com as três bases: V tensão, R resistência, e I corrente
+
+      V
+    R   I
+
+- Exemplo 5:
+
+Um aquecedor elétrico de 8Ω solicita uma corrente de 10A.
+Calcule a potência desse aquecedor.
+
+    R = 8Ω
+    I = 10A
+    P = ?
+
+    P = R * I²
+    P = 8 * 10²
+    P = 8 * 100
+    P = 800W
+
+- Exemplo 6:
+Um acendedor de cigarro de um automóvel funciona com 12V fornecidos pela bateria.
+Sabendo que a resistência é de 3Ω, qual a potência desse aquecedor?
+
+>> Exercícios
+
+-> 1 Qual a equação da Lei de Ohm?
+
+-> 2 Dê as equações e as unidades de medida para corrente, tensão e resistência elétrica, segundo a Lei de Ohm
+
+Resposta: i (Corrente) = V/R [A]
+R (Resistência) = V/I [Ω]
+V (Tensão) = R * i [V]
+
+-> 3 No circuito abaixo, calcule os valores segundo a Lei de Ohm
+
+a) V = 5V
+   R = 330Ω
+   I = ?
+Resposta: 5 / 330 = 0,015A
+
+b) v = 30V
+   R = ?
+   I = 0,2A
+Resposta: 30 / 0,2 = 150Ω
+
+c) V = ?
+   R = 1,2kΩ
+   I = 15mA
+Resposta: 1200 * 0,015 = 18V
+
+d) V = ?
+   R = 200Ω
+   I = 300mA
+Resposta = 200 * 0,300 = 60V
+
+e) V = 12V
+   R = ?
+   I = 1250uA
+Resposta: 12 / 0,00125 = 9,6kΩ
+
+f) V = 60V
+   R = 680Ω
+   I = ?
+Resposta: 60 / 680 = 0,08A
+   
