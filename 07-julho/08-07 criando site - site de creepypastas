@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="estilo.css">
+    <title>C=======================================3</title>
+
+    <style>
+/* Fundo assustador */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://static.vecteezy.com/system/resources/previews/040/693/429/non_2x/red-and-black-grunge-texture-abstract-dark-red-watercolor-background-dark-red-background-with-texture-vector.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-align: center;
+}
+
+/* Cabeçalhos */
+h1, h2, h3 {
+    color: #ff0000;
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 20px;
+}
+
+/* Parágrafos */
+p {
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-left: 4px solid #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+/* Container principal */
+.site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Páginas */
+.pagina {
+    display: none;
+}
+
+/* Grade de botões */
+#INICIO {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* Botões */
+#INICIO button {
+    background: none;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#INICIO button:hover {
+    transform: scale(1.1);
+}
+
+/* Imagens dos botões */
+#INICIO img {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 25px #ff0000;
+    border-radius: 10px;
+}
+
+/* Botão de retorno */
+button.voltar {
+    background-color: #220000;
+    color: #ff0000;
+    border: none;
+    padding: 12px 24px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff0000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.voltar:hover {
+    background-color: #330000;
+    transform: scale(1.05);
+}
+
+button[onclick*="mostrarPagina('inicio')"] {
+    background-color: #220000;
+    color: #ff0000;
+    border: none;
+    padding: 12px 24px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff0000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[onclick*="mostrarPagina('inicio')"]:hover {
+    background-color: #330000;
+    transform: scale(1.05);
+}
+
+
+    </style>
+
+    <script>
+        function mostrarPagina(nome) {
+    document.querySelectorAll('.pagina').forEach(div => div.classList.remove('ativa'));
+
+    if (nome === 'inicio') {
+        document.getElementById('paginaInicial').classList.add('ativa');
+    } else {
+        document.getElementById('pagina' + nome.charAt(0).toUpperCase() + nome.slice(1)).classList.add('ativa');
+    }
+}
+    </script>
+
+    <script>
+    function mostrarPagina(nome) {
+        // Oculta todas as páginas
+        document.querySelectorAll('.site > div').forEach(div => {
+            div.style.display = 'none';
+        });
+
+        // Exibe a página correspondente
+        if (nome === 'inicio') {
+            document.getElementById('INICIO').style.display = 'block';
+        } else {
+            const id = 'pagina' + nome.charAt(0).toUpperCase() + nome.slice(1);
+            document.getElementById(id).style.display = 'block';
+        }
+    }
+
+    // Exibe a página inicial ao carregar
+    window.onload = function() {
+        mostrarPagina('inicio');
+    };
+    </script>
+
+    
+</head>
+<body>
+    <div class="site">
+    <div id="INICIO">
+        <h1>BEM-VINDOS AO SITE MAIS ASSUSTADOR DO MUNDO</h1>
+        <h2>booooo medo medo medo</h2>
+        <button onclick="mostrarPagina('momo')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwlXG7r47CkSJcEh918U7MPcOJ81xTB2Uwg&s" width="256" height="256"></button>
+        <button onclick="mostrarPagina('jeff')"><img src="data:image/jpeg;base64,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" width="256" height="256"></button>
+        <button onclick="mostrarPagina('lula')"><img src="https://i1.sndcdn.com/artworks-t3ISu9KY1yRnu8Nz-Ks77Hw-t500x500.jpg" width="256" height="256"></button>
+    </div>
+
+    <div id="paginaMomo" class="pagina">
+        <h1>A História da Momo</h1>
+        <h2>Ato 1</h2>
+        <p>Clara era uma adolescente comum, que passava as tardes navegando nas redes sociais e conversando com os amigos pelo celular.
+           Uma noite, quando estava sozinha no quarto, seu telefone vibrou com uma mensagem de um número desconhecido. 
+             Curiosa, ela abriu e se deparou com a foto perturbadora de uma figura esquelética, com olhos enormes e um sorriso macabro — era Momo. 
+             A mensagem dizia apenas: “Você me vê?” Clara sentiu um frio na espinha, mas achou que fosse uma brincadeira de mau gosto. 
+             Logo em seguida, outras mensagens começaram a chegar, cada vez mais assustadoras e insistentes. 
+             Ela tentou ignorar, mas a sensação de ser observada crescia a cada instante. 
+             Durante a noite, Clara teve pesadelos onde Momo aparecia em seu quarto, falando com uma voz sussurrante, ordenando que ela fizesse coisas perigosas. 
+             O medo começou a dominar seus pensamentos, e ela sentiu que algo muito errado estava acontecendo.</p>
+
+        <h2>Ato 2</h2>
+        <p>No dia seguinte, Clara tentou falar com os amigos sobre as mensagens, mas ninguém acreditava nela. 
+             Eles disseram que era só uma lenda urbana, um boato criado para assustar pessoas. 
+             Mesmo assim, as mensagens continuavam chegando, não só para ela, mas também para seus amigos, que começaram a sentir uma presença estranha perto deles. 
+             A família de Clara ficou preocupada com seu comportamento estranho, já que ela mal dormia e estava cada vez mais retraída. 
+             Determinada a acabar com aquilo, Clara pesquisou obsessivamente sobre Momo e descobriu que era uma figura criada na internet, associada a uma série de vídeos assustadores que viralizaram, mas sem provas concretas de que fosse real. 
+             Essa descoberta, porém, não trouxe conforto; ao contrário, ela se sentiu mais isolada e assustada, pois sabia que, mesmo sendo uma lenda, aquilo estava afetando sua mente.</p>
+        
+        <h2>Ato 3</h2>
+        <p>Em uma noite chuvosa, Clara decidiu tomar uma atitude drástica: desligar o celular e todas as suas redes sociais para tentar se afastar da influência de Momo. 
+             Ela se trancou no quarto, tentando focar em algo que a distraísse, como um livro ou música, mas o medo não a deixava em paz. 
+             Sentia que Momo estava ali, na escuridão, esperando o momento certo para atacar. Tentou dormir, mas o silêncio do quarto era quebrado por sussurros que pareciam vir de todos os cantos. 
+             Finalmente, exausta, ela adormeceu. Quando acordou, seu celular estava sobre a mesa — e, para seu horror, ele vibrou sozinho. 
+             No visor, uma mensagem: “Eu nunca desapareço”. O pânico tomou conta, mas Clara sabia que não podia se deixar dominar pelo medo.</p>
+            
+        <h2>Ato 4</h2>  
+        <p>Nos dias seguintes, Clara buscou ajuda com profissionais, para entender e superar o que estava vivendo.
+             Com o apoio dos amigos e da família, começou a recuperar o controle de sua mente e vida. 
+             Percebeu que Momo, apesar de assustador, era apenas uma manifestação do medo que habitava nela mesma e em outras pessoas. 
+             Aos poucos, a presença das mensagens foi diminuindo, até desaparecer. 
+             No entanto, em uma última noite, enquanto ela apagava a luz para dormir, o celular voltou a vibrar silenciosamente no escuro. 
+             Tremendo, Clara viu a mensagem: “Eu estou sempre aqui, esperando.” 
+             Ela respirou fundo, fechou os olhos e decidiu que não deixaria mais o medo controlar sua vida — fosse Momo real ou não, sua força interior seria maior.</p>
+            
+             <button class="voltar" onclick="mostrarPagina('inicio')">Retornar à página inicial</button>
+
+
+    </div>
+
+    <div id="paginaJeff" class="pagina">
+        <h1>A História do Jeff</h1>
+        <p>Trecho de um jornal local :
+
+            TERRÍVEL ASSASINO EM SÉRIE DESCONHECIDO AINDA ESTÁ A SOLTA.
+            
+            
+            Depois de semanas de assassinatos inexplicáveis, o assassino sinistro, ainda desconhecido, está com paradeiro desconhecido. Depois de pouca evidência encontradas, um jovem garoto diz ter sobrevivido a um dos ataques, e corajosamente contou sua história.
+            
+            "Eu tive um pesadelo e acordei no meio da noite. Eu vi que por algum motivo, a janela estava aberta, mesmo que eu me lembre de ter fechado antes de eu ir para a cama. Levantei-me e fechei-a mais uma vez. Depois disso, eu simplesmente rastejei pra debaixo de minhas cobertas e tentei voltar a dormir. Foi quando eu tive uma sensação estranha, como se alguém estivesse me observando. Olhei para cima, e quase pulei para fora da minha cama. Lá, em um pequeno raio de luz, iluminando por entreas minhas cortinas , tinham um par de olhos. Não eram olhos normais. Eles eram escuros, ameaçadores e de um preto profundo e ... simplesmente...planando lá, me aterrorizando. Foi quando eu vi a boca. Um sorriso , muito horrendo que fez todos os pelos do meu corpo ficarem em pé. A figura estava ali, me observando. Finalmente, depois do que pareceu uma eternidade, ele disse. Uma frase simples, mas disse de uma forma que só um homem fora de si falaria.
+            
+            Ele disse 'Vá dormir'. Deixei um grito escapar, e foi isso que fez ele vir até mim. Ele me apontou uma faca; direto no meu coração; E pulou para cima da minha cama. Eu lutei com ele, chutei, soquei, rolei pela cama, tentando tira-lo de cima de mim. Isso foi quando meu pai entrou no quarto. O homem jogou a faca, diretamente no ombro de meu pai. O homem provavelmente acabaria com ele, se um dos vizinhos não tivesse chamado a policia.
+            
+            Eles estacionaram na frente da minha casa, e correram para a porta. O homem deu a volta e correu escadas a baixo para a entrada. Eu ouvi um barulho de vidro quebrando. Quando eu sai do meu quarto, eu vi que janela do fundo da minha casa estava quebrada. Eu olhei pra fora, e vi ele correndo já longe. Eu posso dizer uma coisa, que eu nunca vou esquecer o rosto dele. Aqueles olhos malditos, frios, e o sorriso psicótico. Isso nunca vai sair da minha cabeça."
+            
+            Jeff e sua família acabaram de se mudar para uma nova vizinhança. Seu pai ganhou uma promoção no trabalho, e eles achavam que seria melhor viver em uma dessas vizinhanças 'requintadas'. Jeff e seu irmão Liu não podiam reclamar, uma casa nova e melhor. O que não tinha pra amar? Em quanto eles desempacotavam as coisas, uma vizinha foi conhecê-los.
+            "Oi" ela disse, "Eu sou Bárbara, moro do outro lado da rua. Bem, eu só queria me apresentar pra vocês, e meu filho também." Ela se virou e chamou seu filho. "Billy, esses são os nossos novos vizinhos." Billy disse oi, e correu de voltas para o pátio da casa onde voltou a brincar.
+            "Bem," disse a mãe de Jeff, "Eu sou Margaret, esse é meu marido Peter, e meus dois filhos, Jeff e Liu." Se conhecendo, Bárbara logo os convidou para o aniversário de seu filho. Jeff e Liu estavam prontos para rejeitar, quando a mãe deles disse que adorariam comparecer.Então quando eles terminaram de desempacotar as coisas, Jeff foi até sua mãe.
+            
+            "Mãe, por que você aceitaria um convite de uma festinha? Não sei se você não notou, mas eu não sou mais uma criancinha."
+            "Jeff, nós acabamos de nos mudar pra cá; nós devíamos mostrar que queremos passar um tempo com nossos vizinhos. Agora, nós vamos à festa, e ponto final." Jeff começou a falar, mas parou logo em seguida, sabendo que não poderia fazer nada a respeito. Quando sua mãe dizia alguma coisa, era aquilo e fim de papo. Ele andou até seu novo quarto, e desmoronou na cama. Ele sentou ali e ficou olhando para o seu teto quando, de repente , ele sentiu algo estranho. Não como uma dor, mas... Um sentimento estranho. Ele ignorou aquilo como apenas um sentimento qualquer. Ele ouviu a mãe chamá-lo de baixo para pegar suas coisas, e desceu.
+            
+            No outro dia, Jeff desceu as escadas para tomar café da manhã e ir para escola. Quando se sentou para comer , ele teve o mesmo sentimento estranho do dia anterior. Só que agora mais forte. Ele teve uma pequena dor, como um puxão, mas ele ignorou mais uma vez. Assim que ele e o irmão terminaram o café, eles andaram para o ponto de ônibus. Sentaram-se lá, esperando o ônibus. Então, do nada, um garoto de skate pulou por cima deles, por apenas uns centímetros de suas cabeças. Os dois deram um salto, surpresos. "Mas que porra é essa?"
+            A criança deu a volta foi até eles. Ele deu um pisão na ponta do skate, e pegou com a mão. O garoto parecia ter uns 12 anos; um ano mais novo que Jeff. Ele vestia uma camiseta da Aeropostale e um jeans azul rasgado.
+            
+            "Ora, ora, ora. Parece que temos carne nova no pedaço." De repente, mais duas outras crianças apareceram. Um era super magro, e outro era enorme. "Bem, já que vocês são novos aqui, gostaríamos de nos apresentar; Aquele ali é o Keith" Jeff e Liu olharam para o magrinho. Ele tinha uma cara de paradão, que daria pra você um braço esquerdo se precisasse. "E o outro é o Troy" Eles olharam para o gordo. Era um rolha de poço. Aquela criança não devia ter se exercitado desde que começou a engatinhar.
+            "E eu," disse o garoto do skate " sou Randy. Agora, deixe-me explicar; para todas as crianças nesse bairro há um preço pequeno para a passagem de ônibus , se é que você me entende." Liu se levantou, pronto pra socar o garoto até que ele virasse do avesso, quando um dos amigos de Randy puxou uma faca e apontou pra ele "Tsc, tsc, tsc, eu pensei que vocês seriam mais cooperativos, mas parece que vamos precisar fazer do jeito mais difícil." O garoto foi até Liu, e tirou a carteira do bolso dele. Jeff teve aquele sentimento de novo. Agora estava realmente forte, uma sensação de queimação. Jeff se levantou, mas Liu pediu para que ele se sentasse de novo. Ele ignorou e andou em direção do garoto.
+            "Ouça aqui, seu punkzinho, você devolve a carteira do meu irmão ou..." Randy colocou a carteira no próprio bolso, e tirou sua faca.
+            "Ah, e o que você vai fazer?" Assim que ele terminou a frase, Jeff socou o garoto no nariz. Quando Randy tentou tocar o rosto, Jeff segurou seu pulso e o quebrou. Randy gritou e Jeff pegou a faca de sua mão. Troy e Keith correram para pegar Jeff, mas ele era muito rápido. Ele jogou Randy no chão. Keith tentou atacá-lo, mas Jeff se abaixou e apunhalou a faca em seu braço. Keith deixou a faca cair, e caiu logo em seguida no chão gritando. Troy também tentou atacá-lo, mas Jeff nem precisou da faca. Ele socou Troy diretamente no estômago, e Troy caiu de joelhos, e quando caiu, ele vomitou o todo o chão. Liu não conseguiu fazer nada, além de olhar admiradamente para seu irmão.
+            "Jeff, como você.. ?" Isso foi tudo que ele disse. Eles viram o ônibus vindo, e sabiam que seriam culpados por tudo aquilo. Então eles começaram a correr o mais rápido que puderam.
+            
+            Enquanto eles corriam, eles olharam pra trás, e viram o motorista do ônibus correndo para Randy e os outros. Eles correram até a escola, sem se atrever a contar qualquer coisa sobre aquilo. Apenas se sentaram e assistiram as aulas. Liu achava que tinha sido apenas seu irmão batendo em algumas crianças, mas Jeff sabia que era algo a mais. E era algo, algo assustador. Quando ele tinha aquele sentimento, e via o quão poderoso era, a única coisa que desejava era machucar alguém. Ele não gostava como isso soava, mas não conseguia deter-se de se sentir feliz. Ele sentiu o sentimento estranho sumindo, e não voltou pelo o resto do dia na escola. Mesmo quando ele caminhava para casa devido à coisa toda, perto do ponto de ônibus, e como agora ele provavelmente não pegaria mais o ônibus,ele sentiu-se feliz. Quando voltaram pra casa, seus pais perguntaram como tinha sido o dia deles, e ele disse com uma voz meio sinistra "Foi um ótimo dia".
+            
+            Na manhã seguinte, ele ouviu alguém batendo na porta da frente. Desceu as escadas e encontrou dois policiais na porta, com sua mãe olhando pra ele muito zangada.
+            "Jeff, esses policiais estão me dizendo que você atacou três crianças. E que não foi uma briga normal, que eles foram esfaqueados. Esfaqueados, filho!" Jeff olhou para o chão, mostrando para sua mãe que era verdade.
+            
+            "Mãe, mas eles que tinha facas e apontaram para Liu e para mim."
+            
+            "Filho," disse um dos policiais, "Nós encontramos três crianças, duas esfaqueadas, um com uma contusão no estômago, e temos testemunhas de que você estava na cena. Agora, o que você tem para nos contar?" Jeff sabia que era inútil. Ele poderia dizer que ele e Liu tinham sido atacados, mas não havia provas de que não tinham sido eles que atacaram primeiro. Eles não poderiam dizer que eles não estavam fugindo, porque verdade seja dita que estavam. Então Jeff e Liu não poderiam defender-se.
+            
+            "Filho, chame seu irmão." Jeff não poderia fazer isso, sabendo que só ele tinha batido nos garotos.
+            "Senhor, fui... fui eu. Eu fui quem bateu nos garotos. Liu tentou me segurar, mas ele não conseguiu me parar." O policial olhou para seu parceiro, e os dois acenaram com a cabeça.
+            "Olha garoto, isso será um ano no Centro de Detenção juvenil..."
+            "Espere!" falou Liu. Todos olharam para o topo da escada, para vê-lo segurando uma faca. Os policiais pegaram suas armas e apontaram para Liu.
+            "Fui eu, eu bati naqueles punkzinhos. Tenho as marcas pra provar." Ele levantou as mangas para revelar cortes e contusões , como se ele estivesse em uma luta.
+            "Filho, coloque a faca no chão," disse o policial. Liu afrouxou os dedos, e deixou-a cair no chão. Ele colocou as mãos para cima, e andou até os policiais.
+            
+            "Não Liu! Fui eu, eu que fiz isso!" Jeff falou, com lágrimas escorrendo pelo seu rosto.
+            "Ah, pobre irmãozinho, tentando pegar a culpa pelo que eu fiz. Bem, me levem embora." O policial levou Liu até a viatura.
+            "Liu, fale pra eles que fui eu! Fale! Fui eu quem bateu naqueles garotos!" A mãe de Jeff colocou a mão no ombro dele.
+            "Por favor, Jeff, você não tem que mentir. Nós sabemos que foi Liu, você não pode impedir. Não faça isso ser mais difícil que já está sendo." Jeff ficou olhando sem poder fazer nada, enquanto o carro saia velozmente com Liu dentro. Alguns minutos depois o pai deles estacionou na frente de casa, e vendo o rosto de Jeff, sabia que algo estava errado.
+            "Filho, filho o que houve?" Jeff não podia responder. Suas cordas vocais estavam tensas de tanto chorar. Em vez disso, a mãe de Jeff andou até seu pai para dar a má notícia à ele, enquanto Jeff chorava na garagem.
+            
+            Depois de uma hora ou mais Jeff voltou para a casa, viu que seus pais estavam ambos chocados, tristes e decepcionados. Ele não podia olhar para eles. Ele não podia ver que eles achavam que a culpa era de Liu. Ele foi dormir, tentando fazer com que a coisa toda saísse de sua mente. Dois dias se passaram, sem notícias de Liu da prisão. Não havia amigos para sair. Nada além de tristeza e culpa. Isso até sábado, quando Jeff foi acordado por sua mãe, com um rosto feliz, ensolarada.
+            
+            "É hoje, Jeff." ela disse enquanto ela abriu as cortinas e deixando uma inundação de luz no quarto de Jeff.
+            "O que é hoje?" Jeff perguntou ainda meio dormindo.
+            "Ora, é a festa de Billy." Jeff estava agora totalmente desperto.
+            "Mãe, você está brincando, né? Você não espera que eu vá para a festa de alguma criança depois..." Houve uma longa pausa.
+            "Jeff, nós dois sabemos o que aconteceu. Eu acho que esta festa pode ser a coisa que vai iluminar os dias passados. Agora, vá se vestir."
+            
+            A mãe de Jeff saiu do quarto e foi se preparar. Jeff lutou para se levantar. Ele pegou uma camisa qualquer, uma calça jeans e desceu escadas. Ele viu o pai e a mãe todos bem vestidos; sua mãe em um vestido e seu pai em um terno. Ele pensou: por que eles sempre usam essas roupas extravagantes para uma festa de criança?
+            "Filho, isso é tudo que você vai vestir?" disse a mãe de Jeff.
+            "Melhor do que usar algo exagerado.", disse. Sua mãe escondeu a vontade de gritar com ele e escondeu-a com um sorriso.
+            "Mas Jeff, você poderia se vestir melhor, se quiser causar uma boa impressão" disse o pai. Jeff grunhiu e voltou para seu quarto.
+            "Eu não tenho roupas extravagantes!" ele gritou ao subir as escadas.
+            "Basta pegar alguma coisa." disse sua mãe. Ele olhou ao redor em seu armário para o que ele chamava de fantasia. Ele encontrou um par de calças pretas, que ele tinha para ocasiões especiais, e uma camiseta. Ele não conseguia encontrar uma camisa para sair. Ele olha em volta, e só encontra camisas listradas e padronizadas. Nenhuma que combinasse com a calça. Finalmente, ele encontra um moletom branco, jogado em uma cadeira e colocou-o.
+            "Você vai assim?" ambos disseram. Sua mãe olhou para o relógio. "Oooh, não há tempo para mudar. Vamos embora." Ela disse enquanto puxava Jeff e seu pai para fora.
+            
+            Atravessaram a rua até a casa de Bárbara e Billy. Bateram na porta e encontraram com Bárbara que, assim como seus pais, estava extravagantemente vestida. Enquanto eles caminhavam para dentro da casa, Jeff só via adultos, não crianças.
+            "As crianças estão lá fora, no quintal. Jeff, que tal você ir conhecer algumas das crianças?" disse Bárbara.
+            Jeff saiu para o jardim que estava cheio de crianças. Eles estavam correndo em trajes estranhas de vaqueiros e atirando um no outro com armas de plástico. De repente, um garoto veio até ele e lhe entregou uma arma de brinquedo e um chapéu.
+            
+            "Hey. Quer brincar?" , disse.
+            "Aah, não mesmo, pirralho. Eu sou muito velho para essas coisas." O garoto olhou para ele com aquela cara estranha de cachorro pidão.
+            "Po-favô?" disse o menino. "Tudo bem", disse Jeff. Ele colocou o chapéu e começou a fingir atirar nas crianças. A princípio ele pensou que era uma ideia totalmente ridícula, mas depois ele começou a realmente se divertir. Pode não ter sido super legal, mas foi a primeira vez que ele havia feito algo que tirou seus pensamentos de Liu.
+            
+            Assim, ele brincava com as crianças por um tempo, até que ouviu um barulho. Um barulho estranho de rolamento.Então algo bate nele. Randy, Troy, e Keith pulando a cerca assim como seus skates. Jeff deixou cair a arma falsa e arrancou o chapéu. Randy olhou para Jeff com um ódio ardente.
+            "Olá? Jeff?", disse. "Nós temos alguns negócios inacabados". Jeff viu seu nariz machucado. "Eu acho que estamos quites. Eu te dei uma surra e você enviou o Liu para o centro de detenção." Jeff falou enraivecido.
+            Randy tinha fúria nos olhos. "Oh não, eu não jogo para empatar, e sim para ganhar. Você pode ter acabado com a gente no outro dia, mas não hoje." Quando Randy falou, Jeff correu e Randy foi atrás dele. Ambos caíram no chão. Randy socou o nariz de Jeff, e Jeff agarrou-o pelas orelhas e deu uma cabeçada nele. Jeff empurrou Randy pra longe e ambos se levantaram. As crianças estavam gritando e os pais correndo para fora da casa. Troy e Keith puxaram armas de seus bolsos.
+            "Ninguém se mexe ou tripas vão voar!" eles disseram. Randy puxou uma faca e apunhalou o ombro de Jeff.
+            
+            Jeff gritou e caiu de joelhos. Randy começa a chutá-lo no rosto. Depois de três chutes, Jeff pega o pé de Randy e torce-o, fazendo com que Randy caia no chão. Jeff se levantou e correu em direção a porta dos fundos. Porém, Troy agarrou-o.
+            "Precisa de ajuda?" Ele pegou Jeff pelo colarinho e jogou-o de volta pro pátio através da porta. Enquanto Jeff tenta ficar de pé ele é chutado para o chão novamente. Randy começa a chutar repetidamente Jeff, até que ele começa a tossir sangue.
+            "Vamos Jeff, lute comigo!" Ele pega Jeff e atira-o para a cozinha. Randy vê uma garrafa de vodka em cima do balcão e esmaga o vidro sobre a cabeça de Jeff. "Lute!" Ele joga Jeff de volta para a sala de estar.
+            "Vamos Jeff, olhe para mim!" Jeff olha para cima, o rosto cheio de sangue. "Eu sou quem mandou seu irmão pro centro de detenção! E agora você só vai só sentar ai e deixá-lo apodrecer lá por um ano inteiro! Você deveria se envergonhar!" Jeff começa a se levantar.
+            
+            "Ah, finalmente! Levante e lute!" Jeff agora está de pé, sangue e vodka no rosto. Mais uma vez ele fica com aquela sensação estranha, aquela que ele já não sentia há algum tempo. "Finalmente. Ele está de pé!" Randy diz enquanto corre em direção a Jeff. É quando acontece. Algo dentro de Jeff se encaixa. Seu psicológico é destruído, todo o pensamento racional se foi, tudo o que ele pode fazer, é matar. Ele pega Randy derruba-o ao chão. Ele fica em cima dele e lhe dá um soco direto no peito onde fica o coração. O soco faz com que o coração de Randy pare. Enquanto Randy suspira. Jeff golpeia-o. Soco após soco, o sangue jorra do corpo de Randy, até que ele dá um último suspiro e morre.
+            Todo mundo está olhando para Jeff agora. Os pais, as crianças chorando, até Troy e Keith. Apesar de estarem assombrados, Troy e Keith apontam suas armas para Jeff. Jeff vê as armas apontadas para ele e corre para as escadas. Enquanto ele corre, Troy e Keith disparam fogo contraele, todos os tiros perdido. Jeff sobe as escadas. Ele ouve Troy e Keith seguindo-o. Enquanto eles disparam suas últimas balas, Jeff entra dentro do banheiro. Ela pega o toalheiro, e arranca da parede. Troy e Keith correm para o banheiro, com as facas em punho preparadas.
+            
+            Troy move sua faca em direção a Jeff, que se afasta e bate com o toalheiro no rosto de Troy. Troy cai duro e agora tudo o que resta é Keith. Ele é mais ágil que Troy, e desvia quando Jeff tentava acerta-lo com o toalheiro. Ele larga a faca e pega Jeff pelo pescoço, empurrando-o contra a parede. Uma coisa como água sanitária que estava na prateleira caiu em cima dos dois. Ambos sentem a pele queimar e começaram a gritar. Jeff enxugou os olhos da melhor forma que pôde, e puxou o toalheiro, acertando direto na a cabeça de Keith. E antes que Keith sangrasse até a morte, ele deixou escapar um sorriso sinistro.
+            "O que há de tão engraçado?" Jeff perguntou. Keith pegou um isqueiro e ligou-o. "O que é engraçado?", disse, "é que você está coberto de água sanitária e álcool." Jeff arregalou os olhos ao ver Keith jogando o isqueiro para ele. Assim que o isqueiro aceso fez contato com ele, as chamas iniciaram. Enquanto o álcool o queimava, a água sanitária branqueava sua pele. Jeff gritava terrivelmente enquanto ardia em fogo. Ele tentou rolar para fora do fogo, mas não adiantava, o álcool tinha feito dele um inferno ambulante. Ele correu pelo corredor, e caiu das escadas. Todos começaram a gritar quando viram Jeff, agora uma tocha-humana, cair no chão, quase morto. A última coisa que Jeff viu foi sua mãe e os outros pais que tentavam apagar as chamas. Foi quando ele desmaiou.
+            
+            Quando Jeff acordou tinha um molde de gesso envolvido em torno de seu rosto. Ele não conseguia ver nada, mas sentiu um molde em seu ombro, e pontos por todo seu corpo. Tentou se levantar, mas ele percebeu que havia alguns tubos em seu braço, e quando ele tentou levantar-se ele caiu, e uma enfermeira correu para ajudá-lo.
+            "Eu não acho que você pode sair da cama ainda." ela disse, enquanto colocava-o de volta em sua cama e reinserido o cateter em seu braço. Jeff sentou-se ali, sem-nenhuma visão, nenhuma ideia do que estava ao seu redor. Finalmente, depois de horas, ele ouviu sua mãe.
+            "Querido, você está bem?", perguntou ela. Jeff não poderia responder embora,pois seu rosto estava coberto por gesso. "Oh querido, eu tenho grande notícia. Depois que todas as testemunhas disseram à polícia que Randy tinha atacado você, eles decidiram soltar o Liu."
+            Isso fez com que Jeff quase pulasse, parando, lembrando-se do tubo sair do seu braço. "Ele estará fora amanhã, e então você dois poderão estar juntos de novo". A mãe do Jeff abraça-o e se despede.
+            
+            As semanas seguintes foram formadas apenas onde Jeff era visitado pela sua família. Até o dia onde os seus curativos deveriam ser retiradas. Sua família estava lá para vê-lo, como estaria agora sua aparência. Quando os médicos desembrulharam as ataduras do rosto do Jeff todos estavam na ponta das cadeiras. Eles esperaram até o último curativo sobre o rosto de Jeff serem removidos.
+            "Vamos esperar o melhor," disse o médico. Ele rapidamente puxa o último pano, deixando agora o rosto de Jeff amostra.
+            A mãe de Jeff grita ao ver seu rosto, Liu e o pai de Jeff olham horrorizados para ele.
+            "O quê? O que aconteceu com meu rosto?" Jeff disse. Ele se levanta rapidamente, ignorando a tontura, e corre para o banheiro. Ele olhou no espelho e viu a causa da aflição de todos. Sua cara. Era... Era simplesmente horrível. Seus lábios foram queimados a um profundo tom de vermelho. Seu rosto se transformou em uma cor branca pura, e seu cabelo chamuscaram de marrom a preto. Ele lentamente colocou a mão em seu rosto. Era como se encostasse em couro agora. Ele olhou de volta para sua família depois de volta para o espelho.
+            "Jeff", disse Liu."Não é assim tão ruim...."
+            
+            "Não é tão ruim!?", disse Jeff, "é perfeito!" Sua família toda ficou surpreendida. Jeff começou a rir incontrolavelmente seus pais percebendo que seu olho esquerdo e a mão tremiam.
+            "Umm... Jeff, você está bem?"
+            "Bem? Eu nunca me senti mais feliz! Ha ha ha ha ha haaaaaa , olhe para mim. Esse cara caí perfeitamente comigo!" Ele não conseguia parar de rir. Ele acariciou seu rosto sentindo-o. Olhando no espelho. O que causou isso? Bem, você deve se lembrar que quando Jeff estava lutando Randy algo em sua mente, sua sanidade, estalou. E desta vez tinha sido permanente. Agora ele foi deixado como uma máquina descontrolada de matar, e seus pais não tinham noção disso.
+            "Doutor", disse a mãe de Jeff, "Meu filho...é, você sabe.. Está bem? Na cabeça?"
+            "Ah sim, este comportamento é típico para os pacientes que tomam muitas grandes quantidades de analgésicos. Se seu comportamento não mudar em poucas semanas, traga-o de volta aqui, e nós vamos dar-lhe um teste psicológico."
+            "Ah,sim. Obrigada doutor." A mãe de Jeff até ele. "Jeff, querido. É hora de ir."
+            Jeff olha de longe o espelho, seu rosto ainda formando um sorriso louco. "Tudo bem, mamãe. Ha ha haaaaaahahaaaaa!" sua mãe segurou-o pelos ombros e o levou para pegar suas roupas.
+            "Isto é o que veio", disse a moça no balcão. A mãe de Jeff olhou para baixo para ver as calças pretas e o moletom branco seu filho usara no dia da festa. Agora eles estavam limpos do sangue e costuradas. A mãe de Jeff levou-o para seu quarto e fez com que ele colocasse sua roupa. Então eles deixaram, não sabendo que este era seu último dia de vida.
+            
+            Mais tarde naquela noite, a mãe de Jeff acordou com um som vindo do banheiro. Soou como se alguém estivesse chorando. Ela lentamente caminhou para ver o que era. Quando ela olhou para o banheiro ela viu uma visão horrenda. Jeff tinha pego uma faca e esculpido um sorriso em seu rosto.
+            "Jeff, o que você está fazendo?", perguntou sua mãe. Jeff olhou para eles. "Eu não conseguia me manter sorrindo mamãe. Doeu depois de algum tempo. Agora, eu posso sorrir para sempre." A Mãe de Jeff percebeu seus olhos, anelados em preto. "Jeff, os seus olhos!” Os seus olhos aparentemente nunca fechavam.
+            "Eu não podia ver meu rosto. Eu comecei a ficar cansado e meus olhos começaram a fechar. Eu queimei as pálpebras para então me ver pra sempre; este meu novo rosto". A mãe do Jeff lentamente começou a se afastar, vendo que seu filho estava totalmente louco. "O que há de errado mamãe? Eu não sou bonito?"
+            "Sim filho," ela disse, "Sim, você é. Lindo... Deixe eu ir chamar o Papai, para que ele possa ver seu lindo rosto." Ela correu para o quarto e sacudiu o pai de Jeff do seu sono. "Querido, pegue a arma nós..." Ela parou quando viu Jeff na porta, segurando uma faca.
+            "Mamãe, você mentiu." Foi a última coisa que os dois ouviram enquanto Jeff corria na direção deles com a faca, esfaqueando ambos.
+            Seu irmão Liu acordou, assustado com algum ruído. Ele não ouviu mais nada, então ele apenas fechou os olhos e tentou voltar a dormir. Enquanto ele estava na fronteira do sono, ele teve a sensação estranha de que alguém o estava observando.
+            Ele olhou para cima, antes que a mão de Jeff cobrisse sua a boca. Lentamente, ele ergueu a faca pronta para mergulhá-la em Liu. Liu debateu-se tentando escapar de Jeff.
+            
+            "Shhhhhhh", Jeff disse: "Vá dormir."</p>
+        <button onclick="mostrarPagina('inicio')">Retornar à página inicial</button>
+    </div>
+
+    <div id="paginaLula" class="pagina">
+        <h1>A História do Lula</h1>
+        <p>Página 1 do livro do Lula...</p>
+        <button onclick="mostrarPagina('inicio')">Retornar à página inicial</button>
+    </div>
+</div>
+    <script src="codigo.js"></script>
+</body>
+</html>
