@@ -1,0 +1,40 @@
+>> Eletrônico Analógica - Diodos, Fontes de Alimentação, Amplificações Operacionais e Transistores.
+
+-> Diodo:
+  É um componente eletrônico que permite a passagem da corrente em um só sentido.
+  Usado em quase todas os equipamentos eletrônicos presentes nas residências, escritórios e indústrias.
+  Principal uso é a transformação da corrente alternada para corrente contínua.
+
+  Composto de duas partes separadas por uma junção chamada barreira.
+  A tensão necessária para vencer esta barreira é de 0,3V a 0,6V.
+
+  Na figura apresentada (AVA), o diodo está diretamente polarizado e a corrente fluirá através dele, seguindo
+  o sentido convencional.
+  Se a tensão da fonte não for suficiente para romper a barreira, não haverá corrente circulando no circuito.
+
+-> Diodo Ideal:
+  Não existe mas é usado para explicar como os diodos funcionam
+
+-> Diodo Polarização Inversa:
+  Se a bateria estiver invertida, conforme a figura (AVA), o diodo está inversamente ligado.
+
+-> Diodo Ideal com Polariza
+  No caso do diodo polarizado inversamente, o diodo comporta-se como um circuito aberto.
+
+-> Diodo Real
+  O diodo real funcona como um resistor, quando polarizado diretamente.
+  Através da Lei de Ohm, é possível calcular essa resistência como:
+
+  R(direta) = V(direta) / I(direta)
+  R(direta) < 100Ω
+
+  Contudo, a resistência é variável, visto que a corrente é variável por conta da dinâmica do componente.
+  Assim, é determinada a partir de uma curva característica conhecida (AVA):
+
+-> Aplicação de Diodos
+
+  Retificador de meia onda
+
+- Fonte de tensão alternada:
+  Quando a tensão estiver no semiciclo positivo, há condução de corrente.
+  Quando a tensão estiver no semiciclo negativo, não há condução de corrente.
